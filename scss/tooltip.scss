@@ -1,0 +1,11 @@
+.tooltip {
+    font-family: "Sans";
+
+    &.show {
+        opacity: .8;
+    }
+
+    .tooltip-inner {
+        border-radius: $main-radius;
+    }
+}

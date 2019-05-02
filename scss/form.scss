@@ -1,0 +1,43 @@
+.form-control {
+    border: 1px solid $my-light-color;
+    border-radius: $main-radius;
+
+    &:focus {
+        border-color: $my-primary-color;
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+label {
+    font-family: "Sans Light";
+    font-size: .75rem;
+}
+
+.custom-control-label::before {
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: $my-primary-color solid 1px;
+}
+
+.custom-control-label::after {
+    top: 0;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: $my-primary-color;
+    background-color: $my-primary-color;
+}
+
+
+.custom-checkbox .custom-control-label::before {
+    //border-radius: 5px;
+}

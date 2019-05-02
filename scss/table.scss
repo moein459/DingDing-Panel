@@ -1,0 +1,44 @@
+.table {
+    td, th {
+        border: none;
+        padding: .6rem;
+    }
+
+    th {
+        font-weight: normal;
+        font-family: "Sans Bold";
+
+        &.sortable {
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                font-family: MDI;
+                position: absolute;
+                left: 5px;
+                display: inline-block;
+                opacity: .6;
+            }
+
+            &.asc {
+                &::after {
+                    content: "";
+                    opacity: 1;
+                }
+            }
+
+            &.desc {
+                &::after {
+                    content: "";
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: $my-light-color;
+}

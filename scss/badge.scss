@@ -1,0 +1,38 @@
+.badge {
+    padding: 5px;
+    margin: 0 2px;
+    border-radius: $main-radius;
+    font-family: "Sans Bold";
+}
+
+.btn .badge {
+    margin-right: 9px;
+}
+
+.badge-primary {
+    background-color: $primary-color;
+}
+
+.badge-warning {
+    background-color: $warning-color;
+}
+
+.badge-danger {
+    background-color: $danger-color;
+}
+
+.badge-info {
+    background-color: $info-color;
+}
+
+.badge-dark {
+    background-color: $dark-color;
+}
+
+.badge-light {
+    background-color: $light-color;
+}
+
+.badge-success {
+    background-color: $success-color;
+}

@@ -1,0 +1,60 @@
+.data-table {
+    .card-header {
+        padding: .75rem .9rem;
+
+        .options {
+            .btn-icon {
+                i {
+                    font-size: 1.2rem;
+                    vertical-align: -2px;
+                }
+            }
+
+            select {
+                border-radius: $main-radius;
+                background-color: unset;
+                border: 1px solid #d0d0d0;
+                margin-right: 8px;
+                transition: $main-transition;
+
+                &:hover, &:focus {
+                    cursor: pointer;
+                    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .05);
+                    border-color: $my-primary-color;
+                    outline: none;
+                }
+            }
+        }
+
+        .filter {
+            display: none;
+
+            .form-group {
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+        }
+
+        .search {
+            display: none;
+
+            input {
+                background-color: unset;
+                border: unset;
+                font-size: .8rem;
+                padding-right: 25px;
+            }
+
+            .form-group {
+                margin-bottom: 0;
+                margin-top: 10px;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}

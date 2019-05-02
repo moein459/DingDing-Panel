@@ -1,0 +1,34 @@
+doctype html
+html(lang="fa-IR")
+    head
+        title Login
+        include head.pug
+    body.login-container
+        .card.login-card
+            .card-header
+                ul.nav.nav-tabs
+                    li.active
+                        a(data-toggle="tab" href="#getCode").active دریافت کد
+                    li
+                        a(data-toggle="tab" href="#menu1") ورود
+            .card-body
+                .tab-content
+                    #getCode.tab-pane.fade.in.active.show
+                        form
+                            .form-group.std-code
+                                label(for="exampleFormControlInput1") کد دانشجویی
+                                input#exampleFormControlInput1.form-control(type="text" placeholder="971210033111033")
+                                i.mdi.mdi-send(onclick='window.location.href="index.html";')
+                        p.login-desc
+                            | لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        ul.login-desc-items
+                            li
+                                | چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                            li
+                                | کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                            li
+                                | ...
+                    #menu1.tab-pane.fade
+                        p مرحله دوم
+            .card-footer
+                span سیستم اتوماسیون تغذیه

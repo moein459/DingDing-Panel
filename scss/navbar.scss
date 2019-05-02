@@ -1,0 +1,165 @@
+#nav-bar {
+    background-color: $my-light-color;
+    z-index: 996;
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    position: fixed;
+    border-bottom: 1px solid rgba(222,226,230,0);
+    transition: border-bottom-color $main-transition;
+
+    &.scrolled-down {
+        border-bottom: 1px solid rgba(222,226,230,1);
+    }
+
+    .sidebar-ctrl {
+        transition: $sidebar-transition;
+        float: right;
+        transform: translateY(19%);
+        padding-right: 0;
+
+        &.sidebar-ctrl-show-menu {
+            padding-right: calc(#{$sidebar-width} - 3px);
+            @media (max-width: 1100px) {
+                padding-right: 0;
+            }
+        }
+
+        span {
+            display: inline-block;
+            position: relative;
+            top: -5px;
+            right: -15px;
+            font-size: 1.1rem;
+            -webkit-font-smoothing: antialiased
+        }
+
+        i {
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                z-index: -10;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-color: #e4e8e9;
+                right: -27px;
+                position: relative;
+                top: 6px;
+                border-radius: 100px;
+                transform: scale(0);
+            }
+
+            &:hover:after {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .option-bar {
+        background-color: $my-light-color;
+
+        .option-bar-container {
+            width: 310px;
+            height: 55px;
+            left: 0;
+            position: absolute;
+            @include media-breakpoint-down(sm) {
+                width: 140px;
+            }
+
+            .profile {
+                position: relative;
+
+                .profile-image {
+                    width: 42px;
+                    margin: 6px 0;
+                    border-radius: 100px;
+                    //border: 3px solid #27a889;
+                    border: 3px solid rgba(0,0,0,.1);
+                    display: inline;
+                    position: absolute;
+                }
+
+                .profile-details {
+                    display: inline-block;
+                    position: relative;
+                    top: 6px;
+                    right: 50px;
+
+                    p {
+                        margin: -1px 0 0 0;
+                        display: inline-block;
+                        color: white;
+                        font-size: 1.05rem;
+                        //position: absolute;
+                        //margin: 6px 10px 0 0;
+                    }
+
+                    span {
+                        display: block;
+                        //color: #136e60;
+                        color: darken($my-primary-color, 20%);
+                        //color: lighten( $my-primary-color, 30% );
+                        font-size: .6rem;
+                        position: relative;
+                        top: 4px;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        display: none;
+                    }
+                }
+            }
+
+            .actions {
+                margin-top: 8px;
+                margin-left: 10px;
+
+                i {
+                    color: white;
+                    font-size: 1.6rem;
+                    padding: 0 6px;
+                }
+            }
+        }
+
+        .svg {
+            position: absolute;
+            left: 0;
+            fill-rule: evenodd;
+            height: 55px;
+            transition: left $main-transition;
+        }
+
+        .svg-1 {
+            //fill: #22947B;
+            fill: darken($my-primary-color, 11%);
+            left: 90px;
+            @include media-breakpoint-down(sm) {
+                //display: none;
+                left: -185px;
+            }
+        }
+
+        .svg-2 {
+            //fill: #24A085;
+            fill: darken($my-primary-color, 7%);
+            left: 25px;
+            @include media-breakpoint-down(sm) {
+                //display: none;
+                left: -185px;
+            }
+        }
+
+        .svg-3 {
+            fill: $my-primary-color;
+            left: -10px;
+            @include media-breakpoint-down(sm) {
+                left: -180px;
+            }
+        }
+    }
+}

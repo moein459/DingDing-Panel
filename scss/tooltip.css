@@ -1,0 +1,8 @@
+.tooltip {
+  font-family: "Sans";
+}
+.tooltip.show {
+  opacity: 0.75;
+}
+
+/*# sourceMappingURL=tooltip.css.map */

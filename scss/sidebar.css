@@ -1,0 +1,12 @@
+.sidebar {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  background: red;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

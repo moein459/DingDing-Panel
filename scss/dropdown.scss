@@ -1,0 +1,29 @@
+.dropdown {
+
+}
+.dropdown-menu {
+    margin-top: 4px;
+    border-radius: $main-radius;
+    border: none;
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,.05);
+}
+
+.dropdown-item {
+    text-align: right;
+}
+
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: $my-primary-color;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-right: .2em;
+    margin-left: -4px;
+    vertical-align: - .1rem;
+    content: "";
+    font-family: "MDI";
+    border: none;
+}

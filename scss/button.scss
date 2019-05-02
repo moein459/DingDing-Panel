@@ -1,0 +1,81 @@
+.btn {
+    border-radius: $main-radius;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    transition: $main-transition;
+    vertical-align: -0.05em;
+
+    &.btn-edit, &.btn-delete {
+        i {
+            vertical-align: -0.05em;
+            margin-right: 0.2em;
+            position: relative;
+            left: -3px;
+            top: 1px;
+        }
+    }
+
+    .spinner-border, .spinner-grow {
+        vertical-align: middle;
+        margin-right: 9px;
+    }
+}
+
+@mixin btn-adv($color) {
+    background-color: $color;
+    &:hover {
+        background-color: lighten($color, $btn-lighten);
+    }
+
+    &:active {
+        background-color: darken($color, $btn-darken) !important;
+    }
+}
+
+.btn-primary {
+    @include btn-adv($primary-color);
+}
+
+.btn-success {
+    @include btn-adv($success-color);
+}
+
+.btn-warning {
+    @include btn-adv($warning-color);
+}
+
+.btn-danger {
+    @include btn-adv($danger-color);
+}
+
+.btn-info {
+    @include btn-adv($info-color);
+}
+
+.btn-dark {
+    @include btn-adv($dark-color);
+}
+
+.btn-light {
+    @include btn-adv($light-color);
+}
+
+.btn-my-primary {
+    @include btn-adv($my-primary-color);
+    color: white !important;
+}
+
+.btn-icon {
+    display: inline;
+    margin: 0 2px;
+    padding: 4px;
+    cursor: pointer;
+    opacity: .75;
+    transition: $main-transition;
+
+    &:hover {
+        color: $my-primary-color;
+        opacity: 1;
+    }
+}

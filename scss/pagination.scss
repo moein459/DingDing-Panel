@@ -1,0 +1,41 @@
+.pagination {
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+    }
+
+    .page-item {
+        border-radius: $main-radius;
+        transition: $main-transition;
+        margin: 2px;
+
+        &.active {
+            background-color: $my-primary-color;
+
+            a {
+                color: white;
+            }
+        }
+
+        &:hover:not(.active) {
+            background-color: lighten($light-color, 8%);
+        }
+
+        .page-link {
+            color: black;
+            background: none;
+            border: none;
+        }
+    }
+}
+
+.pagination-data {
+    text-align: left;
+    font-size: .82rem;
+    color: $text-muted;
+    padding: 5px 15px 0 15px;
+    vertical-align: bottom;
+    margin-top: 15px;
+    @include media-breakpoint-down(sm) {
+        margin-top: 5px;
+    }
+}

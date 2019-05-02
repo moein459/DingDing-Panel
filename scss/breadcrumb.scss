@@ -1,0 +1,34 @@
+.breadcrumb-container {
+    display: inline-block;
+
+    .breadcrumb {
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: $main-radius;
+        box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .025);
+
+        .breadcrumb-item {
+            padding-left: 0;
+            font-size: .75rem;
+            font-family: "Sans Light";
+
+            a {
+                color: black;
+                font-family: "Sans";
+                text-decoration: none;
+            }
+
+            &:before {
+                content: "";
+                font-family: "MDI";
+                padding: 0 .2rem;
+                font-size: .65rem;
+                vertical-align: -0.08rem;
+            }
+
+            &:first-child:before {
+                content: none;
+            }
+        }
+    }
+}

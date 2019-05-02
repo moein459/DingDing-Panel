@@ -1,0 +1,10 @@
+.alert {
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.alert-primary {
+  background: none;
+}
+
+/*# sourceMappingURL=alert.css.map */

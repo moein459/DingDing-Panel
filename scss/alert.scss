@@ -1,0 +1,28 @@
+.alert {
+    border-radius: $main-radius;
+    border-right-width: 4px;
+}
+
+.alert-primary {
+    border-color: $primary-color;
+}
+
+.alert-success {
+    border-color: $success-color;
+}
+
+.alert-danger {
+    border-color: $danger-color;
+}
+
+.alert-warning {
+    border-color: $warning-color;
+}
+
+.alert-info {
+    border-color: $info-color;
+}
+
+.alert-dark {
+    border-color: $dark-color;
+}

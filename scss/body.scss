@@ -1,0 +1,32 @@
+body {
+    direction: rtl;
+    font-family: 'Sans';
+    text-align: right;
+    background-color: $my-light-color;
+    touch-action: pan-y;
+}
+
+::selection {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.app-body {
+    z-index: -1;
+    transition: $sidebar-transition padding-right;
+    padding: 70px 20px 15px 20px;
+    overflow: hidden;
+
+    &.show-menu {
+        padding-right: calc(20px + #{$sidebar-width});
+    }
+}
+
+.back-drop {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .65;
+    z-index: 997;
+    display: none;
+}

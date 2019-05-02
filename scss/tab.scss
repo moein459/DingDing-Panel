@@ -1,0 +1,42 @@
+.nav {
+    display: block;
+
+    &.nav-tabs {
+        border-bottom: none;
+        padding-right: 0;
+
+        li {
+            float: right;
+            position: relative;
+
+            a {
+                padding: 0 15px;
+                display: block;
+                text-decoration: none;
+                color: hsl(0, 0, 35);
+                transition: $main-transition;
+
+                &:hover {
+                    color: black;
+                }
+
+                &.active {
+
+                    color: $my-primary-color;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 150%;
+                        right: -25%;
+                        height: 3px;
+                        border-radius: 3px 3px 0 0;
+                        position: relative;
+                        bottom: -12px;
+                        background-color: $my-primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
