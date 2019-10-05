@@ -2,11 +2,12 @@
     td, th {
         border: none;
         padding: .6rem;
+        font-size: .85rem;
     }
 
     th {
-        font-weight: normal;
-        font-family: "Sans Bold";
+        font-weight: bold;
+        font-family: $main-font;
 
         &.sortable {
             position: relative;

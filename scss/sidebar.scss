@@ -12,7 +12,7 @@
     transition: $sidebar-transition right;
 
     &.sidebar-show {
-        right: 0px;
+        right: 0;
     }
 
     .btnReservation {
@@ -49,7 +49,8 @@
 
         span {
             font-size: 13px;
-            font-family: "Sans Bold";
+            font-family: $main-font;
+            font-weight: bold;
         }
     }
 
@@ -70,31 +71,27 @@
                     transition: $main-transition;
                 }
 
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 4px;
+                    height: 25px;
+                    position: absolute;
+                    right: -5px;
+                    border-radius: 4px 0 0 4px;
+                    background-color: $my-primary-color;
+                    transition: $main-transition;
+                }
+
                 &.dropdown-active {
                     background-color: $my-light-color;
 
                     &:after {
-                        content: '';
-                        font-family: "MDI";
-                        float: left;
-                        color: black;
                         transform: rotate(180deg);
                     }
 
                     &:before {
-                        content: '';
-                        display: inline-block;
-                        width: 4px;
-                        height: 25px;
-                        position: absolute;
-                        right: -5px;
-                        border-radius: 4px 0 0 4px;
-                        background-color: $my-primary-color;
-                        animation: toLeft $main-transition forwards;
-                    }
-                    @keyframes toLeft {
-                        0%   {transform: translateX(0px);}
-                        100% {transform: translateX(-5px);}
+                        right: 0;
                     }
                 }
             }
@@ -115,8 +112,8 @@
                 display: block;
                 padding: 8px 12px 8px 0;
                 border-radius: 0 11px 11px 0;
-                transition: .3s ease-out;
-                font-size: 16px;
+                transition: .3s ease-out background-color;
+                font-size: 14px;
                 margin-left: -10px;
 
                 span, i {

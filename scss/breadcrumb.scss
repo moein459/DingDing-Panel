@@ -10,11 +10,12 @@
         .breadcrumb-item {
             padding-left: 0;
             font-size: .75rem;
-            font-family: "Sans Light";
+            font-family: $main-font;
+            font-weight: lighter;
 
             a {
                 color: black;
-                font-family: "Sans";
+                font-family: $main-font;
                 text-decoration: none;
             }
 
