@@ -1,8 +1,9 @@
 .table {
     td, th {
         border: none;
-        padding: .6rem;
-        font-size: .85rem;
+        padding: .6em;
+        font-size: .85em;
+        white-space: nowrap;
     }
 
     th {
@@ -16,7 +17,7 @@
 
             &::after {
                 content: "";
-                font-family: MDI;
+                font-family: "MDI";
                 position: absolute;
                 left: 5px;
                 display: inline-block;

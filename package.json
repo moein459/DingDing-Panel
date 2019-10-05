@@ -14,5 +14,9 @@
         "jquery": "^3.4.1",
         "popper.js": "^1.15.0",
         "jquery-touchswipe": "^1.6.19"
+    },
+    "devDependencies": {
+        "sass": "^1.23.0",
+        "pug-cli": "^1.0.0-alpha6"
     }
 }

@@ -2,7 +2,7 @@
     border: none;
     border-radius: $main-radius;
     overflow: hidden;
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .05);
+    box-shadow: $main-shadow;
 
     .card-header {
         background: hsl(0, 0, 97%);

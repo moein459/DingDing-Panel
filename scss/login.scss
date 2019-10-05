@@ -14,40 +14,27 @@
         background: unset;
         border-bottom: 1px solid #dee2e6;
 
-        ul {
-            padding: 0;
-            margin: 0;
+        ul li a {
+            padding: 5px 0;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            position: relative;
+            display: block;
+            border-left: 1px solid rgba(0, 0, 0, .125);
+            width: 170px;
 
-            li {
-                a {
-                    padding: 5px 0;
-                    text-align: center;
-                    border-left: 1px solid rgba(0, 0, 0, .125);
-                    color: black;
-                    text-decoration: none;
-                    position: relative;
-                    display: block;
-                    width: 170px;
-                    //transition: $main-transition;
-                    &.active {
-                        color: $my-primary-color;
+            &.active {
+                color: $my-primary-color;
 
-                        &:after {
-                            content: none;
-                        }
-
-                        &:before {
-                            content: "";
-                            display: inline-block;
-                            background-color: $my-primary-color;
-                            width: 50%;
-                            height: 3px;
-                            right: 42px;
-                            position: absolute;
-                            bottom: -11px;
-                            border-radius: 4px 4px 0 0;
-                        }
-                    }
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    background-color: $my-primary-color;
+                    width: 50%;
+                    right: 25%;
+                    position: absolute;
+                    bottom: -11px;
                 }
 
                 &:last-child {
@@ -57,32 +44,11 @@
                 }
             }
         }
-
-        .nav-tabs {
-            border: none;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
     }
 
     .card-footer {
         border: none;
-        //background: linear-gradient(135deg, #4daf7c 0%,#2abb9b 100%);
         background: linear-gradient(130deg, #2abb9b, #4daf7c);
-        background-size: 200% 200%;
-        animation: AnimationName 5s ease infinite;
-        @keyframes AnimationName {
-            0% {
-                background-position: 0% 51%
-            }
-            50% {
-                background-position: 100% 50%
-            }
-            100% {
-                background-position: 0% 51%
-            }
-        }
 
         span {
             color: white;
@@ -101,8 +67,8 @@
 
     i {
         position: absolute;
-        left: 0px;
-        top: 30px;
+        left: 0;
+        top: 28px;
         transform: rotate(180deg);
         opacity: .5;
         cursor: pointer;
@@ -117,7 +83,7 @@
 
 .login-desc {
     text-align: justify;
-    font-size: .90rem;
+    font-size: .90em;
     line-height: 1.8;
 }
 
@@ -127,15 +93,15 @@
 
     li {
         text-align: justify;
-        font-size: .8rem;
+        font-size: .8em;
         line-height: 1.65;
         margin-bottom: 7px;
-    }
 
-    li:before {
-        content: "";
-        font-family: "MDI";
-        display: inline-block;
-        width: 1.5em; /* same as padding-left set on li */
+        &:before {
+            content: "";
+            font-family: "MDI";
+            display: inline-block;
+            width: 1.5em;
+        }
     }
 }

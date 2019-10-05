@@ -1,0 +1,11 @@
+// Buttons
+@mixin btn-adv($color) {
+    background-color: $color;
+    &:hover {
+        background-color: lighten($color, $btn-lighten);
+    }
+
+    &:active {
+        background-color: darken($color, $btn-darken) !important;
+    }
+}

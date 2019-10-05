@@ -3,37 +3,15 @@
     margin: 0 2px;
     border-radius: $main-radius;
     font-family: $main-font;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .btn .badge {
     margin-right: 9px;
 }
 
-.badge-primary {
-    background-color: $primary-color;
-}
-
-.badge-warning {
-    background-color: $warning-color;
-}
-
-.badge-danger {
-    background-color: $danger-color;
-}
-
-.badge-info {
-    background-color: $info-color;
-}
-
-.badge-dark {
-    background-color: $dark-color;
-}
-
-.badge-light {
-    background-color: $light-color;
-}
-
-.badge-success {
-    background-color: $success-color;
+@each $key, $color in $colors {
+    .badge-#{$key} {
+        background-color: $color;
+    }
 }

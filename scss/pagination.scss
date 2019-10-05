@@ -17,7 +17,7 @@
         }
 
         &:hover:not(.active) {
-            background-color: lighten($light-color, 8%);
+            background-color: lighten(map_get($colors, 'light'), 8%);
         }
 
         .page-link {
@@ -30,7 +30,7 @@
 
 .pagination-data {
     text-align: left;
-    font-size: .82rem;
+    font-size: .82em;
     color: $text-muted;
     padding: 5px 15px 0 15px;
     vertical-align: bottom;

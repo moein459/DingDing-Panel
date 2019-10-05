@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     direction: rtl;
-    font-family: 'iransans';
+    font-family: 'iransans', Tahoma, sans-serif;
     text-align: right;
     background-color: $my-light-color;
     touch-action: pan-y;

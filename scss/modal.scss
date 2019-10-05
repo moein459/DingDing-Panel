@@ -4,7 +4,7 @@
 .modal-content {
     border-radius: $main-radius;
     border: none;
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .05);
+    box-shadow: $main-shadow;
 }
 
 .modal-header {
@@ -13,6 +13,7 @@
     border-radius: 5px;
 
     .modal-title {
+        font-size: 1.1em;
     }
 
     .close {
