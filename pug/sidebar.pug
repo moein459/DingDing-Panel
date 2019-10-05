@@ -1,0 +1,17 @@
+#sidebar.sidebar-show
+    .btn.btn-success.btnReservation سفارش جدید
+    .d-flex.justify-content-between.Credit
+        div
+            a(href="#")
+                i.mdi.mdi-plus
+                span.mr-1 اعتبار حساب
+        div
+            span 5,500 تومان
+
+
+    ul
+        each item in sideBarMenuItems
+            if item.type === sidebarMenuType.Single
+                +sideBarMenuSingle(item)
+            else
+                +sidebarMenuDropdown(item)

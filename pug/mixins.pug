@@ -1,0 +1,25 @@
+// Sidebar
+mixin sideBarMenuSingle(item)
+    li
+        a(href=item.href, class=(item.active) ? 'active': '').sidebar-item
+            i(class=item.iconClass)
+            span #{item.label}
+
+mixin sidebarMenuDropdown(item)
+    li.dropdown-group
+        a(href=item.href).dropdown-btn
+            i(class=item.iconClass)
+            span #{item.label}
+        .dropdown-content
+            each single in item.dropdownContent
+                a(href=single.href).sidebar-item
+                    i(class=single.iconClass)
+                    span #{single.label}
+
+// Breadcrumb
+mixin breadcrumb(item, active)
+    if active
+        li.breadcrumb-item.active #{item.label}
+    else
+        li.breadcrumb-item.active
+            a(href=item.href).active #{item.label}

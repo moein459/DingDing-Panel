@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@mdi/font": "^3.6.95",
+        "@mdi/font": "^4.4.95",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
         "popper.js": "^1.15.0",

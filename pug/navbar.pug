@@ -1,0 +1,28 @@
+#nav-bar
+    .sidebar-ctrl.sidebar-ctrl-show-menu
+        i.mdi.mdi-menu.mdi-24px.sidebar-toggle
+        span پنل مدیریت
+    .option-bar
+        svg(xmlns='http://www.w3.org/2000/svg', width='371', height='61', viewBox='0 0 371 61').svg.svg-1
+            defs
+            path.cls-1(d='M-9-7H371L348,43.785C343.064,53.477,339.046,61,328,61H-9V-7Z')
+
+        svg(xmlns='http://www.w3.org/2000/svg', width='371', height='61', viewBox='0 0 371 61').svg.svg-2
+            defs
+            path.cls-1(d='M-9-7H371L348,43.785C343.064,53.477,339.046,61,328,61H-9V-7Z')
+
+        svg(xmlns='http://www.w3.org/2000/svg', width='371', height='61', viewBox='0 0 371 61').svg.svg-3
+            defs
+            path.cls-1(d='M-9-7H371L348,43.785C343.064,53.477,339.046,61,328,61H-9V-7Z')
+            .option-bar-container.d-flex.justify-content-between
+                a(href="#")
+                    .profile
+                        img(src="assets/img/profile.jpg").profile-image
+                        .profile-details
+                            p معین زارع
+                            span کارشناسی نرم افزار
+                .actions
+                    a(href="#", data-toggle="tooltip", data-placement="bottom", title="تنظیمات")
+                        i.mdi.mdi-settings
+                    a(href="#", data-toggle="tooltip", data-placement="bottom", title="خروج", onclick='window.location.href = "login.html";')
+                        i.mdi.mdi-logout

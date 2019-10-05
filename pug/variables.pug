@@ -1,0 +1,19 @@
+-
+    const sidebarMenuType = {'Single': 0, 'Dropdown': 1}
+    const sideBarMenuItems = [
+        {label: 'پیشخوان', iconClass: 'mdi mdi-plus', href: '#', type: sidebarMenuType.Single, active: true},
+        {label: 'رزرو غذا', iconClass: 'mdi mdi-format-list-checks', href: '#', type: sidebarMenuType.Single},
+        {label: 'کاربران', iconClass: 'mdi mdi-account-group', href: '#', type: sidebarMenuType.Dropdown,
+            dropdownContent: [
+                {label: 'دانشجویان', iconClass: 'mdi mdi-account', href: '#', type: sidebarMenuType.Single},
+                {label: 'اساتید', iconClass: 'mdi mdi-account', href: '#', type: sidebarMenuType.Single},
+            ]
+        },
+        {label: 'گزارشات', iconClass: 'mdi mdi-history', href: '#', type: sidebarMenuType.Single}
+    ];
+
+    const breadcrumbs = [
+        {label: 'پیشخوان', iconClass: 'mdi mdi-view-dashboard', href: '#'},
+        {label: 'پروفایل', iconClass: 'mdi mdi-account', href: '#'},
+        {label: 'ویرایش', iconClass: 'mdi mdi-pencil', href: '#'},
+    ]
