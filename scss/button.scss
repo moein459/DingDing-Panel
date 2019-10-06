@@ -5,6 +5,34 @@
     margin: 2px;
     transition: $main-transition;
     vertical-align: -0.05em;
+
+    &.icon {
+        padding-right: 33px;
+        i {
+            position: absolute;
+            right: 10px;
+            vertical-align: middle;
+        }
+
+        &.animated-icon {
+            padding-right: 12px;
+            transform: none !important;
+
+            i {
+                transition: $main-transition;
+                opacity: 0;
+                right: -5px;
+            }
+
+            &:hover {
+                padding-right: 33px;
+                i {
+                    right: 10px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
 .btn-my-primary {

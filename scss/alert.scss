@@ -8,3 +8,13 @@
         border-color: $color;
     }
 }
+
+.alert-dismissible {
+    padding-right: inherit;
+    padding-left: 4em;
+    .close {
+        transition: $main-transition color, opacity;
+        right: unset;
+        left: 0;
+    }
+}

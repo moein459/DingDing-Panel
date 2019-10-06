@@ -1,7 +1,7 @@
 // Sidebar
 mixin sideBarMenuSingle(item)
     li
-        a(href=item.href, class=(item.active) ? 'active': '').sidebar-item
+        a(href=item.href).sidebar-item
             i(class=item.iconClass)
             span #{item.label}
 

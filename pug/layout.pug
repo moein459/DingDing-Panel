@@ -1,0 +1,16 @@
+include variables
+include mixins
+
+doctype html
+html(lang="fa-IR")
+    head
+        title Panel
+        include head
+    body
+        include sidebar
+        .back-drop
+        include navbar
+
+        .app-body.show-menu
+            include breadcrumbs
+            block content

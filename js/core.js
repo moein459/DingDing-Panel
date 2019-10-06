@@ -1,17 +1,17 @@
 var imported = document.createElement('script');
-imported.src = 'js/sidebar.js';
+imported.src = '../js/sidebar.js';
 document.head.appendChild(imported);
 
 imported = document.createElement('script');
-imported.src = 'js/navbar.js';
+imported.src = '../js/navbar.js';
 document.head.appendChild(imported);
 
 imported = document.createElement('script');
-imported.src = 'js/dropdown.js';
+imported.src = '../js/dropdown.js';
 document.head.appendChild(imported);
 
 imported = document.createElement('script');
-imported.src = 'js/data-table.js';
+imported.src = '../js/data-table.js';
 document.head.appendChild(imported);
 
 $(function () {

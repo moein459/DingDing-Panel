@@ -1,0 +1,17 @@
+.example-container {
+    border-radius: $main-radius;
+    border: 1px solid map-get($colors, 'light');
+    box-shadow: $main-shadow;
+
+    .view {
+        padding: 15px;
+    }
+
+    .code {
+        padding: 10px;
+        background-color: white;
+        direction: ltr;
+        text-align: left;
+        border-radius: $main-radius;
+    }
+}

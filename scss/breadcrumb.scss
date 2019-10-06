@@ -1,11 +1,15 @@
 .breadcrumb-container {
-    display: inline-block;
 
     .breadcrumb {
         background-color: white;
         padding: 5px 10px;
         border-radius: $main-radius;
         box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .025);
+        display: inline-flex;
+        &:after {
+            content: "";
+            display: inline-block;
+        }
 
         .breadcrumb-item {
             padding-left: 0;
