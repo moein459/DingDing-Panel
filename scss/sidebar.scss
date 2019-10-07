@@ -87,6 +87,7 @@
             }
 
             .dropdown-btn {
+                cursor: pointer;
                 &:after {
                     content: '';
                     font-family: "Material Design Icons";
@@ -127,6 +128,13 @@
                 a {
                     margin-bottom: 2px;
                     margin-top: 2px;
+
+                    &.active {
+                        background-color: unset;
+                        span, i {
+                            color: $my-primary-color;
+                        }
+                    }
                 }
             }
         }

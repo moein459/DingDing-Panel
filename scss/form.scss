@@ -45,3 +45,10 @@ label {
 .custom-checkbox .custom-control-label::before {
     //border-radius: 5px;
 }
+
+.custom-switch .custom-control-label::after {
+    top: calc(.25rem + -2px);
+}
+
+.custom-range {
+}

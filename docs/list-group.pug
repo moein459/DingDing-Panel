@@ -1,0 +1,31 @@
+extends ../pug/layout
+
+block content
+    h4 لیست گروپ
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="btnNormal")
+                .example-container
+                    .view
+                        .list-group
+                            a.list-group-item.list-group-item-action.active(href='#') تست
+                            a.list-group-item.list-group-item-action(href='#') تست
+                            a.list-group-item.list-group-item-action(href='#') تست
+                            a.list-group-item.list-group-item-action(href='#') تست
+                            a.list-group-item.list-group-item-action.disabled(href='#', tabindex='-1', aria-disabled='true') Vestibulum at eros
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;list-group&quot;&gt;
+                                |   &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action active&quot;&gt;&lt;/a&gt;
+                                |   &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&lt;/a&gt;
+                                |   &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&lt;/a&gt;
+                                |   &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;&lt;/a&gt;
+                                |   &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action disabled&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;&lt;/a&gt;
+                                | &lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#btnNormal") لیست گروپ

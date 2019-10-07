@@ -1,0 +1,82 @@
+extends ../pug/layout
+
+block content
+    h4 کارد
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="cardNormal")
+                .example-container
+                    .view
+                        .card
+                            .card-header
+                                | کارد
+                            .card-body
+                                h5.card-title متن
+                                p.card-text توضیحات
+                                a.btn.btn-primary(href='#') بیشتر
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;card&quot;&gt;
+                                |   &lt;div class=&quot;card-header&quot;&gt;کارد&lt;/div&gt;
+                                |   &lt;div class=&quot;card-body&quot;&gt;
+                                |       &lt;h5 class=&quot;card-title&quot;&gt;متن&lt;/h5&gt;
+                                |       &lt;p class=&quot;card-text&quot;&gt;توضیحات&lt;/p&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;بیشتر&lt;/a&gt;&lt;
+                                | &lt;/div&gt;
+                                | &lt;/div&gt;
+
+            div(id="cardNav")
+                .example-container
+                    .view
+                        .card
+                            .card-header
+                                ul.nav.nav-tabs
+                                    li
+                                        a(data-toggle='tab', href='#info').active اطلاعات
+                                    |
+                                    li
+                                        a(data-toggle='tab', href='#photos') تصاویر
+                                    |
+                                    li
+                                        a(data-toggle='tab', href='#profile') پروفایل
+                                    |
+
+                            .card-body
+                                .tab-content
+                                    #info.tab-pane.fade.in.active.show
+                                        h5.card-title اطلاعات
+                                        p.card-text توضیحات
+                                    #photos.tab-pane.fade
+                                        h5.card-title تصاویر
+                                        p.card-text توضیحات
+                                    #profile.tab-pane.fade
+                                        h5.card-title پروفایل
+                                        p.card-text توضیحات
+                            .card-footer
+                                ul.nav.nav-tabs
+                                    li
+                                        a(data-toggle='tab', href='#info').active اطلاعات
+                                    |
+                                    li
+                                        a(data-toggle='tab', href='#photos') تصاویر
+                                    |
+                                    li
+                                        a(data-toggle='tab', href='#profile') پروفایل
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;card&quot;&gt;
+                                |   &lt;div class=&quot;card-header&quot;&gt;کارد&lt;/div&gt;
+                                |   &lt;div class=&quot;card-body&quot;&gt;
+                                |       &lt;h5 class=&quot;card-title&quot;&gt;متن&lt;/h5&gt;
+                                |       &lt;p class=&quot;card-text&quot;&gt;توضیحات&lt;/p&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;بیشتر&lt;/a&gt;
+                                |   &lt;/div&gt;
+                                | &lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#cardNormal") کارد معمولی
+                li
+                    a(href="#cardNav") کارد همراه تب

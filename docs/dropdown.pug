@@ -1,0 +1,33 @@
+extends ../pug/layout
+
+block content
+    h4 دراپ داون
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="dpNormal")
+                .example-container
+                    .view
+                        .dropdown.d-inline
+                            button#dropdownMenuButton.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                | انتخاب شهر
+                            .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton')
+                                a.dropdown-item(href='#') کاشان
+                                a.dropdown-item(href='#') تهران
+                                a.dropdown-item(href='#') اصفهان
+
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;dropdown d-inline&quot;&gt;
+                                |   &lt;button class=&quot;btn btn-success dropdown-toggle&quot; id=&quot;dropdownMenuButton&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;انتخاب شهر&lt;/button&gt;
+                                |   &lt;div class=&quot;dropdown-menu dropdown-menu-right&quot; aria-labelledby=&quot;dropdownMenuButton&quot;&gt;
+                                |       &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;کاشان&lt;/a&gt;
+                                |       &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;تهران&lt;/a&gt;
+                                |       &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;اصفهان&lt;/a&gt;&lt;/div&gt;
+                                | &lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#dpNormal") دراپ داون

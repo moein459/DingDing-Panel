@@ -1,217 +1,237 @@
 extends ../pug/layout
 
 block content
-    h5 دکمه
-    .row
-        .col-lg-6.col-md-12.mb-4
-            .example-container
-                .view
-                    .btn.btn-primary ثبت
-                    .btn.btn-success ثبت
-                    .btn.btn-info ثبت
-                    .btn.btn-danger ثبت
-                    .btn.btn-warning ثبت
-                    .btn.btn-dark ثبت
-                    .btn.btn-secondary ثبت
-                    .btn.btn-light ثبت
-                .code
-                    pre
-                        code
-                            | &lt;div class=&quot;btn btn-primary&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-success&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-info&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-danger&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-warning&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-dark&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-secondary&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-light&quot;&gt;&lt;/div&gt;
-        .col-lg-6.col-md-12.mb-4
-            .example-container
-                .view
-                    .btn.btn-outline-primary ثبت
-                    .btn.btn-outline-success ثبت
-                    .btn.btn-outline-info ثبت
-                    .btn.btn-outline-danger ثبت
-                    .btn.btn-outline-warning ثبت
-                    .btn.btn-outline-dark ثبت
-                    .btn.btn-outline-secondary ثبت
-                    .btn.btn-outline-light ثبت
-                .code
-                    pre
-                        code
-                            | &lt;div class=&quot;btn btn-outline-primary&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-outline-success&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-outline-info&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-outline-danger&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-outline-warning&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-outline-dark&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-outline-secondary&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-outline-light&quot;&gt;&lt;/div&gt;
+    h4 دکمه
 
     .row
-        .col-lg-6.col-md-12.mb-4
-            .example-container
-                .view
-                    .btn.btn-primary.btn-shadow ثبت
-                    .btn.btn-success.btn-shadow ثبت
-                    .btn.btn-info.btn-shadow ثبت
-                    .btn.btn-danger.btn-shadow ثبت
-                    .btn.btn-warning.btn-shadow ثبت
-                    .btn.btn-dark.btn-shadow ثبت
-                    .btn.btn-secondary.btn-shadow ثبت
-                    .btn.btn-light.btn-shadow ثبت
-                .code
-                    pre
-                        code
-                            | &lt;div class=&quot;btn btn-primary btn-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-success btn-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-danger btn-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-info btn-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-warning btn-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-dark btn-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-secondary btn-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-light btn-shadow&quot;&gt;&lt;/div&gt;
-        .col-lg-6.col-md-12.mb-4
-            .example-container
-                .view
-                    .btn.btn-primary.btn-colored-shadow ثبت
-                    .btn.btn-success.btn-colored-shadow ثبت
-                    .btn.btn-info.btn-colored-shadow ثبت
-                    .btn.btn-danger.btn-colored-shadow ثبت
-                    .btn.btn-warning.btn-colored-shadow ثبت
-                    .btn.btn-dark.btn-colored-shadow ثبت
-                    .btn.btn-secondary.btn-colored-shadow ثبت
-                    .btn.btn-light.btn-colored-shadow ثبت
-                .code
-                    pre
-                        code
-                            | &lt;div class=&quot;btn btn-primary btn-colored-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-success btn-colored-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-info btn-colored-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-danger btn-colored-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-warning btn-colored-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-dark btn-colored-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-secondary btn-colored-shadow&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-light btn-colored-shadow&quot;&gt;&lt;/div&gt;
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="btnNormal")
+                .example-container
+                    .view
+                        .btn.btn-primary ثبت
+                        .btn.btn-success ثبت
+                        .btn.btn-info ثبت
+                        .btn.btn-danger ثبت
+                        .btn.btn-warning ثبت
+                        .btn.btn-dark ثبت
+                        .btn.btn-secondary ثبت
+                        .btn.btn-light ثبت
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;btn btn-primary&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-success&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-info&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-danger&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-warning&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-dark&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-secondary&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-light&quot;&gt;&lt;/div&gt;
 
-    .row
-        .col-lg-6.col-md-12.mb-4
-            .example-container
-                .view
-                    .btn.btn-primary.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-success.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-info.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-danger.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-warning.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-dark.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-secondary.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-light.icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                .code
-                    pre
-                        code
-                            | &lt;div class=&quot;btn btn-primary icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-success icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-danger icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-info icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-warning icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-dark icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-secondary icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-light icon&quot;&gt;&lt;/div&gt;
-        .col-lg-6.col-md-12.mb-4
-            .example-container
-                .view
-                    .btn.btn-primary.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-success.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-info.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-danger.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-warning.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-dark.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-secondary.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                    .btn.btn-light.icon.animated-icon
-                        i.mdi.mdi-comment-plus-outline
-                        | ثبت
-                .code
-                    pre
-                        code
-                            | &lt;div class=&quot;btn btn-primary icon animated-icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-success icon animated-icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-danger icon animated-icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-info icon animated-icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-warning icon animated-icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-dark icon animated-icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-secondary icon animated-icon&quot;&gt;&lt;/div&gt;
-                            | &lt;div class=&quot;btn btn-light icon animated-icon&quot;&gt;&lt;/div&gt;
+            div(id="btnOutline")
+                .example-container
+                    .view
+                        .btn.btn-outline-primary ثبت
+                        .btn.btn-outline-success ثبت
+                        .btn.btn-outline-info ثبت
+                        .btn.btn-outline-danger ثبت
+                        .btn.btn-outline-warning ثبت
+                        .btn.btn-outline-dark ثبت
+                        .btn.btn-outline-secondary ثبت
+                        .btn.btn-outline-light ثبت
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;btn btn-outline-primary&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-outline-success&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-outline-info&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-outline-danger&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-outline-warning&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-outline-dark&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-outline-secondary&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-outline-light&quot;&gt;&lt;/div&gt;
 
+            div(id="btnShadow")
+                .example-container
+                    .view
+                        .btn.btn-primary.btn-shadow ثبت
+                        .btn.btn-success.btn-shadow ثبت
+                        .btn.btn-info.btn-shadow ثبت
+                        .btn.btn-danger.btn-shadow ثبت
+                        .btn.btn-warning.btn-shadow ثبت
+                        .btn.btn-dark.btn-shadow ثبت
+                        .btn.btn-secondary.btn-shadow ثبت
+                        .btn.btn-light.btn-shadow ثبت
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;btn btn-primary btn-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-success btn-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-danger btn-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-info btn-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-warning btn-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-dark btn-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-secondary btn-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-light btn-shadow&quot;&gt;&lt;/div&gt;
 
-    .example-container
-        .view
-            .btn.btn-info.icon.btn-colored-shadow
-                i.mdi.mdi-pencil
-                | ویرایش
-            .btn.btn-danger.icon.btn-colored-shadow
-                i.mdi.mdi-delete
-                | حذف
-            button.btn.btn-primary.btn-shadow
-                | باز کردن مدال
-                span.badge.badge-light 4
+            div(id="btnColoredShadow")
+                .example-container
+                    .view
+                        .btn.btn-primary.btn-colored-shadow ثبت
+                        .btn.btn-success.btn-colored-shadow ثبت
+                        .btn.btn-info.btn-colored-shadow ثبت
+                        .btn.btn-danger.btn-colored-shadow ثبت
+                        .btn.btn-warning.btn-colored-shadow ثبت
+                        .btn.btn-dark.btn-colored-shadow ثبت
+                        .btn.btn-secondary.btn-colored-shadow ثبت
+                        .btn.btn-light.btn-colored-shadow ثبت
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;btn btn-primary btn-colored-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-success btn-colored-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-info btn-colored-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-danger btn-colored-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-warning btn-colored-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-dark btn-colored-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-secondary btn-colored-shadow&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-light btn-colored-shadow&quot;&gt;&lt;/div&gt;
 
-            button.btn.btn-primary.btn-shadow(type='button', disabled='')
-                |   بارگزاری
-                span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
-            button.btn.btn-info.btn-shadow(type='button', disabled='')
-                | بارگزاری
-                span.spinner-grow.spinner-grow-sm(role='status', aria-hidden='true')
-            button.btn.btn-default.btn-shadow.icon.animated-icon
-                i.mdi.mdi-arrow-right
-                | بازگشت
+            div(id="btnIcon")
+                .example-container
+                    .view
+                        .btn.btn-primary.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-success.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-info.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-danger.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-warning.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-dark.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-secondary.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-light.icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;btn btn-primary icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-success icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-danger icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-info icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-warning icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-dark icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-secondary icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-light icon&quot;&gt;&lt;/div&gt;
 
-            br
-            .btn.btn-info
-                i.mdi.mdi-pencil
-            .btn.btn-danger
-                i.mdi.mdi-delete
-            .btn.btn-dark
-                i.mdi.mdi-close
+            div(id="btnAnimatedIcon")
+                .example-container
+                    .view
+                        .btn.btn-primary.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-success.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-info.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-danger.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-warning.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-dark.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-secondary.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                        .btn.btn-light.icon.animated-icon
+                            i.mdi.mdi-comment-plus-outline
+                            | ثبت
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;btn btn-primary icon animated-icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-success icon animated-icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-danger icon animated-icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-info icon animated-icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-warning icon animated-icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-dark icon animated-icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-secondary icon animated-icon&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;btn btn-light icon animated-icon&quot;&gt;&lt;/div&gt;
 
-        .code
-            pre
-                code
-                    | &lt;div class=&quot;btn btn-info icon btn-colored-shadow&quot;&gt;&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;ویرایش&lt;/div&gt;
-                    | &lt;div class=&quot;btn btn-danger icon btn-colored-shadow&quot;&gt;&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;حذف&lt;/div&gt;
-                    | &lt;button class=&quot;btn btn-primary btn-shadow&quot;&gt;باز کردن مدال&lt;span class=&quot;badge badge-light&quot;&gt;4&lt;/span&gt;&lt;/button&gt;
-                    | &lt;button class=&quot;btn btn-primary btn-shadow&quot; type=&quot;button&quot; disabled=&quot;&quot;&gt;  بارگزاری&lt;span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/button&gt;
-                    | &lt;button class=&quot;btn btn-info btn-shadow&quot; type=&quot;button&quot; disabled=&quot;&quot;&gt;  بارگزاری&lt;span class=&quot;spinner-border spinner-grow-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/button&gt;
-                    | &lt;button class=&quot;btn btn-default btn-shadow icon animated-icon&quot;&gt;&lt;i class=&quot;mdi mdi-arrow-right&quot;&gt;&lt;/i&gt;بازگشت&lt;/button&gt;
-                    | &lt;div class=&quot;btn btn-info&quot;&gt;&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                    | &lt;div class=&quot;btn btn-danger&quot;&gt;&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                    | &lt;div class=&quot;btn btn-dark&quot;&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                div(id="btnExamples")
+                    .example-container
+                        .view
+                            .btn.btn-info.icon.btn-colored-shadow
+                                i.mdi.mdi-pencil
+                                | ویرایش
+                            .btn.btn-danger.icon.btn-colored-shadow
+                                i.mdi.mdi-delete
+                                | حذف
+                            button.btn.btn-primary.btn-shadow
+                                | باز کردن مدال
+                                span.badge.badge-light 4
+
+                            button.btn.btn-primary.btn-shadow(type='button', disabled='')
+                                |   بارگزاری
+                                span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
+                            button.btn.btn-info.btn-shadow(type='button', disabled='')
+                                | بارگزاری
+                                span.spinner-grow.spinner-grow-sm(role='status', aria-hidden='true')
+                            button.btn.btn-default.btn-shadow.icon.animated-icon
+                                i.mdi.mdi-arrow-right
+                                | بازگشت
+
+                            br
+                            .btn.btn-info
+                                i.mdi.mdi-pencil
+                            .btn.btn-danger
+                                i.mdi.mdi-delete
+                            .btn.btn-dark
+                                i.mdi.mdi-close
+
+                        .code
+                            pre
+                                code
+                                    | &lt;div class=&quot;btn btn-info icon btn-colored-shadow&quot;&gt;&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;ویرایش&lt;/div&gt;
+                                    | &lt;div class=&quot;btn btn-danger icon btn-colored-shadow&quot;&gt;&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;حذف&lt;/div&gt;
+                                    | &lt;button class=&quot;btn btn-primary btn-shadow&quot;&gt;باز کردن مدال&lt;span class=&quot;badge badge-light&quot;&gt;4&lt;/span&gt;&lt;/button&gt;
+                                    | &lt;button class=&quot;btn btn-primary btn-shadow&quot; type=&quot;button&quot; disabled=&quot;&quot;&gt;  بارگزاری&lt;span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+                                    | &lt;button class=&quot;btn btn-info btn-shadow&quot; type=&quot;button&quot; disabled=&quot;&quot;&gt;  بارگزاری&lt;span class=&quot;spinner-border spinner-grow-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+                                    | &lt;button class=&quot;btn btn-default btn-shadow icon animated-icon&quot;&gt;&lt;i class=&quot;mdi mdi-arrow-right&quot;&gt;&lt;/i&gt;بازگشت&lt;/button&gt;
+                                    | &lt;div class=&quot;btn btn-info&quot;&gt;&lt;i class=&quot;mdi mdi-pencil&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;btn btn-danger&quot;&gt;&lt;i class=&quot;mdi mdi-delete&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;btn btn-dark&quot;&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#btnNormal") دکمه معمولی
+                li
+                    a(href="#btnOutline") دکمه اوتلاین
+                li
+                    a(href="#btnShadow") دکمه سایه سیاه
+                li
+                    a(href="#btnColoredShadow") دکمه سایه رنگی
+                li
+                    a(href="#btnIcon") دکمه همراه ایکن
+                li
+                    a(href="#btnAnimatedIcon") دکمه با ایکن انیمیشن دار
+                li
+                    a(href="#btnExamples") چند مثال

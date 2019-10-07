@@ -4,7 +4,6 @@
     position: relative;
     &:hover {
         background-color: lighten($color, $btn-lighten);
-        transform: translateY(-1px);
     }
 
     &:active {

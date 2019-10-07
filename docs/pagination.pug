@@ -1,0 +1,42 @@
+extends ../pug/layout
+
+block content
+    h4 صفحه بندی
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="pagination")
+            .example-container
+                .view
+                    nav(aria-label='Page navigation example')
+                        ul.pagination
+                            li.page-item
+                                a.page-link(href='#', aria-label='Previous')
+                                    span(aria-hidden='true') «
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#', aria-label='Next')
+                                    span(aria-hidden='true') »
+
+                .code
+                    pre
+                        code
+                            | &lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+                            |   &lt;ul class=&quot;pagination&quot;&gt;
+                            |       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&laquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            |       &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                            |       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                            |       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                            |       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&raquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                            |   &lt;/ul&gt;
+                            | &lt;/nav&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#pagination") صفحه بندی

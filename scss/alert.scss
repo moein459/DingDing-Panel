@@ -1,6 +1,9 @@
 .alert {
     border-radius: $main-radius;
     border-right-width: 4px;
+    i {
+        margin-left: 10px;
+    }
 }
 
 @each $key, $color in $colors {

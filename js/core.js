@@ -17,3 +17,8 @@ document.head.appendChild(imported);
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
+
+$(document).ready(() => {
+    $('.example-container .code pre code').addClass('language-markup');
+    Prism.highlightAll();
+});

@@ -6,8 +6,13 @@
     transition: $main-transition;
     vertical-align: -0.05em;
 
+    &:hover, &:focus {
+        transform: translateY(-1px);
+    }
+
     &.icon {
         padding-right: 33px;
+
         i {
             position: absolute;
             right: 10px;
@@ -26,6 +31,7 @@
 
             &:hover {
                 padding-right: 33px;
+
                 i {
                     right: 10px;
                     opacity: 1;

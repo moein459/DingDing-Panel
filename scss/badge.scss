@@ -1,9 +1,14 @@
 .badge {
-    padding: 5px;
+    padding: 6px;
     margin: 0 2px;
     border-radius: $main-radius;
     font-family: $main-font;
     font-weight: bold;
+
+    &.badge-pill {
+        border-radius: 100px;
+        padding: 6px 10px;
+    }
 }
 
 .btn .badge {
@@ -11,7 +16,16 @@
 }
 
 @each $key, $color in $colors {
-    .badge-#{$key} {
-        background-color: $color;
+    .badge {
+        &.badge-#{$key} {
+            background-color: $color;
+
+            &.badge-pill {
+            }
+        }
+    }
+
+    a.badge-#{$key}:hover {
+        background-color: transparentize($color, .15);
     }
 }

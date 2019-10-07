@@ -1,5 +1,26 @@
 .nav {
-    display: block;
+    padding-right: 0;
+
+    &.nav-pills {
+        .nav-item {
+            margin: 0 2px;
+
+            a {
+                border-radius: $main-radius;
+                transition: $main-transition;
+                color: $my-primary-color;
+
+                &:hover {
+                    color: darken($my-primary-color, 10%);
+                }
+
+                &.active {
+                    color: white;
+                    background-color: $my-primary-color;
+                }
+            }
+        }
+    }
 
     &.nav-tabs {
         border-bottom: none;
