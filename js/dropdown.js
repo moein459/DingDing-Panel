@@ -5,5 +5,5 @@ $(document).ready(function () {
     });
 
     let fileName = location.href.substring(location.href.lastIndexOf('/') + 1, location.href.length);
-    $(`a.sidebar-item[href~="${fileName}"]`).addClass('active').parent().slideDown(0);
+    $(`a.sidebar-item[href~="${fileName}"]`).addClass('active').parent().slideDown(0).prev().addClass('dropdown-active');
 });

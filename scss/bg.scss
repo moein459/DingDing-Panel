@@ -1,0 +1,9 @@
+@each $key, $color in $colors {
+    .bg-#{$key} {
+        background-color: $color !important;
+    }
+}
+
+.bg-my-primary {
+    background-color: $my-primary-color !important;
+}

@@ -8,31 +8,33 @@ block content
             div(id="formCustom")
                 .example-container
                     .view
-                        form
-                            .form-group
-                                label(for='exampleInputEmail1') آدرس ایمیل
-                                input#exampleInputEmail1.form-control.form-control-custom(type='email', aria-describedby='emailHelp', placeholder='example@mail.com')
-                                small#emailHelp.form-text.text-muted برای دیگران نمایش داده نخواهد شد.
-                            .form-group
-                                label(for='exampleInputPassword1') پسورد
-                                input#exampleInputPassword1.form-control.form-control-custom(type='password', placeholder='')
-                            .form-group
-                                .custom-control.custom-checkbox
-                                    input#customCheck1.custom-control-input.alternative(type='checkbox')
-                                    label.custom-control-label.alternative(for='customCheck1') قوانین را مطالعه کرده ام
-                            .form-group
-                                .custom-control.custom-radio
-                                    input#customRadio1.custom-control-input.alternative(type='radio', name='customRadio')
-                                    label.custom-control-label.alternative(for='customRadio1') مرد
-                                .custom-control.custom-radio
-                                    input#customRadio2.custom-control-input.alternative(type='radio', name='customRadio')
-                                    label.custom-control-label.alternative(for='customRadio2') زن
-                                .custom-control.custom-switch
-                                    input#customSwitch1.custom-control-input.alternative(type='checkbox')
-                                    label.custom-control-label.alternative(for='customSwitch1') فعالسازی
+                        .card
+                            .card-body
+                                form
+                                    .form-group
+                                        label(for='exampleInputEmail1') آدرس ایمیل
+                                        input#exampleInputEmail1.form-control.form-control-custom(type='email', aria-describedby='emailHelp', placeholder='example@mail.com')
+                                        small#emailHelp.form-text.text-muted برای دیگران نمایش داده نخواهد شد.
+                                    .form-group
+                                        label(for='exampleInputPassword1') پسورد
+                                        input#exampleInputPassword1.form-control.form-control-custom(type='password', placeholder='')
+                                    .form-group
+                                        .custom-control.custom-checkbox
+                                            input#customCheck1.custom-control-input.alternative(type='checkbox')
+                                            label.custom-control-label.alternative(for='customCheck1') قوانین را مطالعه کرده ام
+                                    .form-group
+                                        .custom-control.custom-radio
+                                            input#customRadio1.custom-control-input.alternative(type='radio', name='customRadio')
+                                            label.custom-control-label.alternative(for='customRadio1') مرد
+                                        .custom-control.custom-radio
+                                            input#customRadio2.custom-control-input.alternative(type='radio', name='customRadio')
+                                            label.custom-control-label.alternative(for='customRadio2') زن
+                                        .custom-control.custom-switch
+                                            input#customSwitch1.custom-control-input.alternative(type='checkbox')
+                                            label.custom-control-label.alternative(for='customSwitch1') فعالسازی
 
-                            button.btn.btn-my-primary.btn-colored-shadow(type='submit') ثبت نام
-                            button.btn.btn-light.btn-colored-shadow(type='reset') بازنشانی
+                                    button.btn.btn-my-primary.btn-colored-shadow(type='submit') ثبت نام
+                                    button.btn.btn-default(type='reset') بازنشانی
 
                     .code
                         pre
@@ -59,7 +61,7 @@ block content
                                 |       &lt;div class=&quot;custom-control custom-switch&quot;&gt;&lt;input class=&quot;custom-control-input alternative&quot; id=&quot;customSwitch1&quot; type=&quot;checkbox&quot; /&gt;&lt;label class=&quot;custom-control-label alternative&quot; for=&quot;customSwitch1&quot;&gt;فعالسازی&lt;/label&gt;&lt;/div&gt;
                                 |   &lt;/div&gt;
                                 |   &lt;button class=&quot;btn btn-my-primary btn-colored-shadow&quot; type=&quot;submit&quot;&gt;ثبت نام&lt;/button&gt;
-                                |   &lt;button class=&quot;btn btn-light btn-colored-shadow&quot; type=&quot;reset&quot;&gt;بازنشانی&lt;/button&gt;
+                                |   &lt;button class=&quot;btn btn-default&quot; type=&quot;reset&quot;&gt;بازنشانی&lt;/button&gt;
                                 | &lt;/form&gt;
 
 

@@ -2,6 +2,10 @@
     padding-right: 0;
 
     &.nav-pills {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: scroll;
+        padding-bottom: 10px;
         .nav-item {
             margin: 0 2px;
 

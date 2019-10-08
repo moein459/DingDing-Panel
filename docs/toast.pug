@@ -1,0 +1,41 @@
+extends ../pug/layout
+
+block content
+    h4 اطلاعیه
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="toast")
+                .example-container
+                    .view
+                        .toast(role='alert' aria-live='assertive' aria-atomic='true')
+                            .toast-header.justify-content-between
+                                div
+                                    i.mdi.mdi-bell-alert
+                                    small ۱۱ دقیقه پیش
+                                div
+                                    button.close(type='button' data-dismiss='toast' aria-label='Close')
+                                        span(aria-hidden='true') &times;
+                            .toast-body
+                                | شما با موفقیت وارد شدید.
+
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;toast&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;true&quot;&gt;
+                                |   &lt;div class=&quot;toast-header justify-content-between&quot;&gt;
+                                |       &lt;div&gt;
+                                |           &lt;i class=&quot;mdi mdi-bell-alert&quot;&gt;&lt;/i&gt;
+                                |           &lt;small&gt;۱۱ دقیقه پیش&lt;/small&gt;
+                                |       &lt;/div&gt;
+                                |       &lt;div&gt;
+                                |           &lt;button class=&quot;close&quot; type=&quot;button&quot; data-dismiss=&quot;toast&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                                |       &lt;/div&gt;
+                                |   &lt;/div&gt;
+                                |   &lt;div class=&quot;toast-body&quot;&gt;شما با موفقیت وارد شدید.&lt;/div&gt;
+                                | &lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#toast") اطلاعیه
