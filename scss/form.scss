@@ -31,8 +31,18 @@ label {
     border: $my-primary-color solid 1px;
 }
 
+.custom-control-label {
+    padding-right: 25px;
+}
+
 .custom-control-label::after {
     top: 0;
+    right: 0;
+}
+
+.custom-control-label::before {
+    top: 0;
+    right: 0;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -43,11 +53,20 @@ label {
 
 
 .custom-checkbox .custom-control-label::before {
-    //border-radius: 5px;
+    left: unset;
+    right: 0;
+}
+
+.custom-switch {
+    label {
+        padding-right: 35px;
+    }
 }
 
 .custom-switch .custom-control-label::after {
     top: calc(.25rem + -2px);
+    left: unset;
+    right: 14px;
 }
 
 .custom-range {
