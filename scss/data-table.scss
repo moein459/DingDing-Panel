@@ -43,6 +43,7 @@
                 border: unset;
                 font-size: .8em;
                 padding-right: 25px;
+                box-shadow: none;
             }
 
             .form-group {
@@ -56,5 +57,14 @@
                 }
             }
         }
+    }
+}
+.data-table-btns {
+    margin-right: 10px;
+    .btn {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        position: relative;
+        bottom: -6px;
     }
 }

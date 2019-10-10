@@ -11,6 +11,14 @@
     &::placeholder {
         color: #cfcfcf;
     }
+
+    &.is-valid {
+        border-color: map_get($colors, 'success');
+    }
+
+    &.is-invalid {
+        border-color: map_get($colors, 'danger');
+    }
 }
 
 label {
