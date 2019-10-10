@@ -1,6 +1,7 @@
 .form-control {
     border: 1px solid $my-light-color;
     border-radius: $main-radius;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.02);
 
     &:focus {
         border-color: $my-primary-color;

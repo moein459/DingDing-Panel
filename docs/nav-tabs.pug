@@ -14,7 +14,7 @@ block content
                         li.nav-item
                             a#pills-profile-tab.nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') پروفایل
                         li.nav-item
-                            a#pills-contact-tab.nav-link(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') تماس با ما
+                            a#pills-contact-tab.nav-link.disabled(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') تماس با ما
                     #pills-tabContent.tab-content
                         #pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-home-tab')
                             .card
@@ -46,9 +46,55 @@ block content
                             |   &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;pills-home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-home-tab&quot;&gt;...&lt;/div&gt;
                             |   &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-profile-tab&quot;&gt;...&lt;/div&gt;
                             |   &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-contact-tab&quot;&gt;...&lt;/div&gt;
+
+                            | &lt;/div&gt;
+
+            div(id="tabNormal")
+            .example-container
+                .view
+                    ul#myTab.nav.nav-tabs(role='tablist')
+                        li.nav-item
+                            a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') خانه
+                        li.nav-item
+                            a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') پروفایل
+                        li.nav-item
+                            a#contact-tab.nav-link.disabled(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') تماس با ما
+                    #myTabContent.tab-content
+                        #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab')
+                            .card
+                                .card-header عنوان
+                                .card-body تست
+                        #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab')
+                            .card
+                                .card-header عنوان
+                                .card-body تست
+                        #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
+                            .card
+                                .card-header عنوان
+                                .card-body تست
+                .code
+                    pre
+                        code
+                            | &lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+                            |   &lt;li class=&quot;nav-item&quot;&gt;
+                            |       &lt;a class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;...&lt;/a&gt;
+                            |   &lt;/li&gt;
+                            |   &lt;li class=&quot;nav-item&quot;&gt;
+                            |       &lt;a class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;...&lt;/a&gt;
+                            |   &lt;/li&gt;
+                            |   &lt;li class=&quot;nav-item&quot;&gt;
+                            |       &lt;a class=&quot;nav-link&quot; id=&quot;contact-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#contact&quot; role=&quot;tab&quot; aria-controls=&quot;contact&quot; aria-selected=&quot;false&quot;&gt;...&lt;/a&gt;
+                            |   &lt;/li&gt;
+                            | &lt;/ul&gt;
+                            |   &lt;div class=&quot;tab-content&quot; id=&quot;myTabContent&quot;&gt;
+                            |   &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot;&gt;...&lt;/div&gt;
+                            |   &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot;&gt;...&lt;/div&gt;
+                            |   &lt;div class=&quot;tab-pane fade&quot; id=&quot;contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot;&gt;...&lt;/div&gt;
                             | &lt;/div&gt;
 
         .col-xl-3.col-lg-4.col-md-12
             ul.code-examples-side-nav
                 li
                     a(href="#tabPill") تب ست قرص
+                    li
+                        a(href="#tabNormal") تب ست معمولی

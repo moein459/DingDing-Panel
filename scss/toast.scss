@@ -11,5 +11,8 @@
             margin-left: 5px;
             vertical-align: text-bottom;
         }
+        .close {
+            transition: $main-transition;
+        }
     }
 }

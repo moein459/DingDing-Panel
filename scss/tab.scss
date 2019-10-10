@@ -6,6 +6,7 @@
         white-space: nowrap;
         overflow: scroll;
         padding-bottom: 10px;
+
         .nav-item {
             margin: 0 2px;
 
@@ -19,49 +20,53 @@
                 }
 
                 &.active {
-                    color: white;
-                    background-color: $my-primary-color;
+                    color: $my-primary-color;
+                    background-color: white;
+                    box-shadow: $main-shadow;
+                }
+
+                &.disabled {
+                    color: lighten(map_get($colors, 'dark'), 50%);
                 }
             }
         }
     }
 
     &.nav-tabs {
-        border-bottom: none;
-        padding-right: 0;
+        border: none;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        padding-bottom: 10px;
 
         li {
-            float: right;
-            position: relative;
+            margin: 0 2px;
 
             a {
-                padding: 0 15px;
-                display: block;
-                text-decoration: none;
-                color: hsl(0, 0, 35);
-                transition: $main-transition;
+                transition: $main-transition background-color, $main-transition color;
+                border: none;
+                background-color: white;
+                color: $my-primary-color;
+                border-radius: $main-radius;
 
-                &:hover {
-                    color: black;
+                &.disabled {
+                    color: lighten(map_get($colors, 'dark'), 50%);
+                    cursor: default;
+                }
+
+                &:not(.disabled) {
+                    box-shadow: $main-shadow;
+                }
+
+                &:hover:not(.disabled):not(.active) {
+                    color: darken($my-primary-color, 10%);
                 }
 
                 &.active {
-
-                    color: $my-primary-color;
-
-                    &:after {
-                        content: "";
-                        display: block;
-                        width: 150%;
-                        right: -25%;
-                        height: 3px;
-                        border-radius: 3px 3px 0 0;
-                        position: relative;
-                        bottom: -12px;
-                        background-color: $my-primary-color;
-                    }
+                    background-color: $my-primary-color;
+                    color: white;
                 }
             }
         }
     }
+
 }
