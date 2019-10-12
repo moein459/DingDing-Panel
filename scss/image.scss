@@ -1,0 +1,47 @@
+.img-thumbnail {
+    box-shadow: $main-shadow;
+}
+
+.img-scalable {
+    position: relative;
+    display: inline-block;
+
+    &:before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        margin: .25em;
+        transition: $main-transition;
+    }
+
+    &:after {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%) scale(.5);
+        color: white;
+        font-size: 3em;
+        content: "\f2f1";
+        font-family: "Material Design Icons";
+        opacity: 0;
+        transition: $main-transition;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &:before {
+            opacity: .3;
+        }
+
+        &:after {
+            opacity: 1;
+            transform: translate(50%, -50%) scale(1);
+        }
+    }
+}
