@@ -5,7 +5,7 @@ block content
 
     .row
         .col-xl-9.col-lg-8.col-md-12
-            div(id="cardNormal")
+            div(id="inputUploadFile")
                 .example-container
                     .view
                         .btn.btn-success.btn-colored-shadow.icon.mb-2
@@ -37,6 +37,7 @@ block content
                                 |   &lt;/li&gt;
                                 |&lt;/ul&gt;
 
+            div(id="inputUploadImage")
                 .example-container
                     .view
                         .upload-image-wrapper
@@ -50,7 +51,7 @@ block content
                                 |   &lt;img src=&quot;../assets/img/def-image.jpg&quot; /&gt;
                                 |   &lt;input id=&quot;img&quot; type=&quot;file&quot; /&gt;
                                 |&lt;/div&gt;
-
+            div(id="inputUploadAvatar")
                 .example-container
                     .view
                         .upload-image-wrapper.avatar
@@ -64,3 +65,12 @@ block content
                                 |   &lt;img src=&quot;../assets/img/def-image.jpg&quot; /&gt;
                                 |   &lt;input id=&quot;img&quot; type=&quot;file&quot; /&gt;
                                 | &lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#inputUploadFile") فایل اپلود معمولی
+                li
+                    a(href="#inputUploadImage") فایل اپلود تصویر
+                li
+                    a(href="#inputUploadAvatar") فایل اپلود آواتار
