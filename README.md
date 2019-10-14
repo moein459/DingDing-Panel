@@ -1,22 +1,16 @@
 # DingDing-Panel
 Persian Admin Template ~!
 
-<a href="http://chakavak.co/zPanel/index.html" target="_blank">Demo</a>
+<a href="http://moein459.github.io/DingDing-Panel" target="_blank">Demo</a>
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-* **Pug/Jade**
-```
-npm install -g pug
-```
-
-* **Sass**
-```
-npm install -g sass
-```
+**Node**
+<br>
+<a href="https://nodejs.org/en/" target="_blank">Download Here</a>
 
 ### Installing
 
@@ -25,12 +19,10 @@ You just need to run this command in main repository folder:
 npm install
 ```
 
-For transpiling *.scss and *.pug files, you can use task runners like Gulp, Webpack, etc. File watchers also can be used.
-
-[**Gulp-Pug**](https://www.npmjs.com/package/gulp-pug)
-
-[**Gulp-Sass**](https://www.npmjs.com/package/gulp-sass)
-
+### Build & Development
+```
+npm run build
+```
 ## Built With
 
 * [Pug/Jade](https://pugjs.org/api/getting-started.html)
@@ -38,4 +30,5 @@ For transpiling *.scss and *.pug files, you can use task runners like Gulp, Webp
 * [Jquery](https://jquery.com/)
 
 ## Note
-The fonts folder isn't available. Because of terms of using "IranSans" font from [Fontiran](https://fontiran.com/) which i use in this project. I'm pre sure you already bought that, if not you can use other fonts you want ( need some changes on code :D ) or buy it from their website which i mention that before.
+* The fonts folder isn't available. Because of terms of using "IranSans" font from [Fontiran](https://fontiran.com/) which i use in this project. I'm pre sure you already bought that, if not you can use other fonts you want ( need some changes on code :D ) or buy it from their website which i mention that before.
+* If you use one of the js libraries or frameworks like React, Angular, Vue etc, I highly recommend you to don't build solution. instead, import styles and js or even dependencies manually. for example you may wanna only use 50% features of bootstrap or for js files you may want to apply functionality with your framework features.

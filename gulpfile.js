@@ -37,7 +37,7 @@ function js() {
         ])
         .pipe(concat('app.js'))
         .pipe(minify())
-        .pipe(dest('build/js', {sourcemaps: true}))
+        .pipe(dest('build/js'))
 }
 
 function copyAssets() {

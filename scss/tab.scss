@@ -47,14 +47,12 @@
                 background-color: white;
                 color: $my-primary-color;
                 border-radius: $main-radius;
+                box-shadow: $main-shadow;
 
                 &.disabled {
-                    color: lighten(map_get($colors, 'dark'), 50%);
+                    color: lighten(map_get($colors, 'dark'), 60%);
+                    background-color: white;
                     cursor: default;
-                }
-
-                &:not(.disabled) {
-                    box-shadow: $main-shadow;
                 }
 
                 &:hover:not(.disabled):not(.active) {

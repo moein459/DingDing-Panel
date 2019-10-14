@@ -1,19 +1,18 @@
 {
-    "name": "panel",
-    "version": "1.0.0",
-    "description": "",
+    "name": "DingDing-Panel",
+    "version": "0.0.1",
+    "description": "Persian Admin Template",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "build": "gulp"
     },
-    "author": "",
+    "author": "Moein Zare",
     "license": "ISC",
     "dependencies": {
         "@mdi/font": "^4.5.95",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
-        "jquery-touchswipe": "^1.6.19",
+        "jquery-touchswipe": "^1.6.19￿",
         "popper.js": "^1.15.0",
         "prismjs": "^1.17.1"
     },
