@@ -4,7 +4,8 @@
     "description": "Persian Admin Template",
     "main": "index.js",
     "scripts": {
-        "build": "gulp"
+        "build": "gulp",
+        "deploy": "git subtree push --prefix build origin gh-pages"
     },
     "author": "Moein Zare",
     "license": "ISC",
