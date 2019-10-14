@@ -30,5 +30,5 @@ npm run build
 * [Jquery](https://jquery.com/)
 
 ## Note
-* The fonts folder isn't available. Because of terms of using "IranSans" font from [Fontiran](https://fontiran.com/) which i use in this project. I'm pre sure you already bought that, if not you can use other fonts you want ( need some changes on code :D ) or buy it from their website which i mention that before.
+* Don't forget to buy IranSans font from [Fontiran](https://fontiran.com/).
 * If you use one of the js libraries or frameworks like React, Angular, Vue etc, I highly recommend you to don't build solution. instead, import styles and js or even dependencies manually. for example you may wanna only use 50% features of bootstrap or for js files you may want to apply functionality with your framework features.
