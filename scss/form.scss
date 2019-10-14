@@ -1,16 +1,30 @@
 .form-control {
     border: 1px solid $my-light-color;
     border-radius: $main-radius;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.02);
+    margin-bottom: .5em;
 
     &:focus {
         border-color: $my-primary-color;
         outline: 0;
         box-shadow: none;
     }
+    &::placeholder {
+        color: #cfcfcf;
+    }
+
+    &.is-valid {
+        border-color: map_get($colors, 'success');
+    }
+
+    &.is-invalid {
+        border-color: map_get($colors, 'danger');
+    }
 }
 
 label {
-    font-family: "Sans Light";
+    font-family: $main-font;
+    font-weight: lighter;
     font-size: .75rem;
 }
 
@@ -27,8 +41,18 @@ label {
     border: $my-primary-color solid 1px;
 }
 
+.custom-control-label {
+    padding-right: 25px;
+}
+
 .custom-control-label::after {
     top: 0;
+    right: 0;
+}
+
+.custom-control-label::before {
+    top: 0;
+    right: 0;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -39,5 +63,21 @@ label {
 
 
 .custom-checkbox .custom-control-label::before {
-    //border-radius: 5px;
+    left: unset;
+    right: 0;
+}
+
+.custom-switch {
+    label {
+        padding-right: 35px;
+    }
+}
+
+.custom-switch .custom-control-label::after {
+    top: calc(.25rem + -2px);
+    left: unset;
+    right: 14px;
+}
+
+.custom-range {
 }

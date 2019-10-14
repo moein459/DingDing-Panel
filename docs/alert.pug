@@ -1,0 +1,115 @@
+extends ../pug/layout
+
+block content
+    h4 اخطار
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="alertNormal")
+                .example-container
+                    .view
+                        .row
+                            .col-md-6.col-sm-12
+                                .alert.alert-primary اخطار
+                                .alert.alert-success اخطار
+                                .alert.alert-danger اخطار
+                                .alert.alert-secondary اخطار
+                            .col-md-6.col-sm-12
+                                .alert.alert-warning اخطار
+                                .alert.alert-info اخطار
+                                .alert.alert-dark اخطار
+                                .alert.alert-light اخطار
+
+                    .code
+                        pre
+                            code
+                                | &lt;div class=&quot;alert alert-primary&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;alert alert-success&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;alert alert-danger&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;alert alert-secondary&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;alert alert-warning&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;alert alert-info&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;alert alert-dark&quot;&gt;&lt;/div&gt;
+                                | &lt;div class=&quot;alert alert-light&quot;&gt;&lt;/div&gt;
+
+                div(id="alertLink")
+                    .example-container
+                        .view
+                            .row
+                                .col-md-6.col-sm-12
+                                    .alert.alert-primary
+                                        a(href="#").alert-link اخطار
+                                    .alert.alert-success
+                                        a(href="#").alert-link اخطار
+                                    .alert.alert-danger
+                                        a(href="#").alert-link اخطار
+                                    .alert.alert-secondary
+                                        a(href="#").alert-link اخطار
+                                .col-md-6.col-sm-12
+                                    .alert.alert-warning
+                                        a(href="#").alert-link اخطار
+                                    .alert.alert-info
+                                        a(href="#").alert-link اخطار
+                                    .alert.alert-dark
+                                        a(href="#").alert-link اخطار
+                                    .alert.alert-light
+                                        a(href="#").alert-link اخطار
+
+                        .code
+                            pre
+                                code
+                                    | &lt;div class=&quot;alert alert-primary&quot;&gt;&lt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;alert alert-success&quot;&gt;&lt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;alert alert-danger&quot;&gt;&lt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;alert alert-secondary&quot;&gt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;&lt;/div&gt;
+                                    | &lt;div class=&quot;alert alert-warning&quot;&gt;&lt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;alert alert-info&quot;&gt;&lt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;alert alert-dark&quot;&gt;&lt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;/div&gt;
+                                    | &lt;div class=&quot;alert alert-light&quot;&gt;&lt;a class=&quot;alert-link&quot; href=&quot;#&quot;&gt;اخطار&lt;/a&gt;&lt;/div&gt;
+
+
+                div(id="alertDismiss")
+                    .example-container
+                        .view
+                            .alert.alert-primary.alert-dismissible
+                                i.mdi.mdi-alert
+                                | اخطار
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                    span(aria-hidden='true') &times;
+
+                        .code
+                            pre
+                                code
+                                    | &lt;div class=&quot;alert alert-primary alert-dismissible&quot;&gt;
+                                    |       اخطار
+                                    |   &lt;button class=&quot;close&quot; type=&quot;button&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;
+                                    |   &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                                    | &lt;/div&gt;
+
+                div(id="alertContent")
+                    .example-container
+                        .view
+                            .alert.alert-success(role='alert')
+                                h4.alert-heading تقریبا تمومه!
+                                hr
+                                p.mb-0
+                                    | تست
+
+                        .code
+                            pre
+                                code
+                                    | &lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+                                    |   &lt;h4 class=&quot;alert-heading&quot;&gt;تقریبا تمومه!&lt;/h4&gt;
+                                    |   &lt;hr/&gt;
+                                    |   &lt;p class=&quot;mb-0&quot;&gt;تست&lt;/p&gt;
+                                    | &lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#alertNormal") هشدار معمولی
+                li
+                    a(href="#alertLink") هشدار لینک
+                li
+                    a(href="#alertDismiss") هشدار قابل بستن
+                li
+                    a(href="#alertContent") هشدار داری محتوا

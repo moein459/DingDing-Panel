@@ -6,59 +6,39 @@
     transition: $main-transition;
     vertical-align: -0.05em;
 
-    &.btn-edit, &.btn-delete {
+    &:hover, &:focus {
+        transform: translateY(-1px);
+    }
+
+    &.icon {
+        padding-right: 33px;
+
         i {
-            vertical-align: -0.05em;
-            margin-right: 0.2em;
-            position: relative;
-            left: -3px;
-            top: 1px;
+            position: absolute;
+            right: 10px;
+            vertical-align: middle;
+        }
+
+        &.animated-icon {
+            padding-right: 12px;
+            transform: none !important;
+
+            i {
+                transition: $main-transition;
+                opacity: 0;
+                right: -5px;
+            }
+
+            &:hover {
+                padding-right: 33px;
+
+                i {
+                    right: 10px;
+                    opacity: 1;
+                }
+            }
         }
     }
-
-    .spinner-border, .spinner-grow {
-        vertical-align: middle;
-        margin-right: 9px;
-    }
-}
-
-@mixin btn-adv($color) {
-    background-color: $color;
-    &:hover {
-        background-color: lighten($color, $btn-lighten);
-    }
-
-    &:active {
-        background-color: darken($color, $btn-darken) !important;
-    }
-}
-
-.btn-primary {
-    @include btn-adv($primary-color);
-}
-
-.btn-success {
-    @include btn-adv($success-color);
-}
-
-.btn-warning {
-    @include btn-adv($warning-color);
-}
-
-.btn-danger {
-    @include btn-adv($danger-color);
-}
-
-.btn-info {
-    @include btn-adv($info-color);
-}
-
-.btn-dark {
-    @include btn-adv($dark-color);
-}
-
-.btn-light {
-    @include btn-adv($light-color);
 }
 
 .btn-my-primary {
@@ -66,16 +46,8 @@
     color: white !important;
 }
 
-.btn-icon {
-    display: inline;
-    margin: 0 2px;
-    padding: 4px;
-    cursor: pointer;
-    opacity: .75;
-    transition: $main-transition;
-
-    &:hover {
-        color: $my-primary-color;
-        opacity: 1;
+@each $key, $color in $colors {
+    .btn-#{$key} {
+        @include btn-adv($color)
     }
 }

@@ -1,0 +1,72 @@
+extends ../pug/layout
+
+block content
+    h4 معماری پنل
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="panelArch")
+                .example-container
+                    .code
+                        pre
+                            code
+                                | &lt;body&gt;
+                                |   &lt;div class=&quot;sidebar-show&quot; id=&quot;sidebar&quot;&gt;
+                                |       &lt;div class=&quot;btn btn-success btn-new-task&quot;&gt;سفارش جدید&lt;/div&gt;
+                                |       &lt;div class=&quot;d-flex justify-content-between credit&quot;&gt;
+                                |           &lt;div&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt;&lt;span class=&quot;mr-1&quot;&gt;اعتبار حساب&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+                                |           &lt;div&gt;&lt;span&gt;5,500 تومان&lt;/span&gt;&lt;/div&gt;
+                                |       &lt;/div&gt;
+                                |       &lt;ul&gt;
+                                |           &lt;li&gt;&lt;a class=&quot;sidebar-item&quot; href=&quot;index.html&quot;&gt;&lt;i class=&quot;mdi mdi-view-dashboard&quot;&gt;&lt;/i&gt;&lt;span&gt;پیشخوان&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                |       &lt;/ul&gt;
+                                |   &lt;/div&gt;
+                                |   &lt;div class=&quot;back-drop&quot;&gt;&lt;/div&gt;
+                                |   &lt;a class=&quot;scroll-to-top&quot; href=&quot;#&quot;&gt;&lt;/a&gt;
+                                |   nav-bar here . . ( if u want it )
+                                |   &lt;div class=&quot;app-body show-menu&quot;&gt;
+                                |       content here . .
+                                |   &lt;/div&gt;
+                                | &lt;/body&gt;
+
+            div(id="panelNav")
+                .example-container
+                    .code
+                        pre
+                            code
+                                | &lt;div id=&quot;nav-bar&quot;&gt;
+                                | &lt;div class=&quot;sidebar-ctrl sidebar-ctrl-show-menu&quot;&gt;&lt;i class=&quot;mdi mdi-menu mdi-24px sidebar-toggle&quot;&gt;&lt;/i&gt;&lt;span&gt;پنل مدیریت&lt;/span&gt;
+                                | &lt;/div&gt;
+                                | &lt;div class=&quot;option-bar&quot;&gt;
+                                | &lt;svg class=&quot;svg svg-1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;371&quot; height=&quot;61&quot; viewBox=&quot;0 0 371 61&quot;&gt;
+                                | &lt;defs&gt;&lt;/defs&gt;
+                                | &lt;path class=&quot;cls-1&quot; d=&quot;M-9-7H371L348,43.785C343.064,53.477,339.046,61,328,61H-9V-7Z&quot;&gt;&lt;/path&gt;
+                                | &lt;/svg&gt;
+                                | &lt;svg class=&quot;svg svg-2&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;371&quot; height=&quot;61&quot; viewBox=&quot;0 0 371 61&quot;&gt;
+                                | &lt;defs&gt;&lt;/defs&gt;
+                                | &lt;path class=&quot;cls-1&quot; d=&quot;M-9-7H371L348,43.785C343.064,53.477,339.046,61,328,61H-9V-7Z&quot;&gt;&lt;/path&gt;
+                                | &lt;/svg&gt;
+                                | &lt;svg class=&quot;svg svg-3&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;371&quot; height=&quot;61&quot; viewBox=&quot;0 0 371 61&quot;&gt;
+                                | &lt;defs&gt;&lt;/defs&gt;
+                                | &lt;path class=&quot;cls-1&quot; d=&quot;M-9-7H371L348,43.785C343.064,53.477,339.046,61,328,61H-9V-7Z&quot;&gt;&lt;/path&gt;
+                                | &lt;div class=&quot;option-bar-container d-flex justify-content-between&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+                                | &lt;div class=&quot;profile&quot;&gt;&lt;img class=&quot;profile-image&quot; src=&quot;../assets/img/profile.jpg&quot;&gt;
+                                | &lt;div class=&quot;profile-details&quot;&gt;&lt;p&gt;معین زارع&lt;/p&gt;&lt;span&gt;کارشناسی نرم افزار&lt;/span&gt;&lt;/div&gt;
+                                | &lt;/div&gt;
+                                | &lt;/a&gt;
+                                | &lt;div class=&quot;actions&quot;&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;اطلاعیه ها&quot;&gt;&lt;i
+                                |     class=&quot;mdi mdi-bell&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot;
+                                |     title=&quot;خروج&quot;
+                                |     onclick=&quot;window.location.href = &quot;login.html&quot;&gt;&lt;i
+                                |     class=&quot;mdi mdi-logout&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+                                | &lt;/div&gt;
+                                | &lt;/svg&gt;
+                                | &lt;/div&gt;
+                                | &lt;/div&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#panelArch") معماری پنل
+                li
+                    a(href="#panelNav") نویگیشن منو پنل

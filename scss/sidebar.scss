@@ -1,55 +1,52 @@
 #sidebar {
-    height: 100%;
     width: $sidebar-width;
+    height: 100%;
     position: fixed;
     z-index: 998;
     top: 0;
-    right: -$sidebar-width;
+    right: -$sidebar-width - 5;
     overflow: auto;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
     padding: 10px;
     background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
     transition: $sidebar-transition right;
 
     &.sidebar-show {
-        right: 0px;
+        right: 0;
     }
 
-    .btnReservation {
+    .btn-new-task {
         display: block;
         background-color: $my-primary-color;
-        //box-shadow: 0 5px 10px 0 rgba(3, 201, 169, .25);
-        box-shadow: 0 5px 10px 0 rgba(110, 110, 110, .25);
+        box-shadow: 0 5px 10px 0 transparentize($my-primary-color, .5);
 
         &:hover {
             background-color: lighten($my-primary-color, $btn-lighten);
+            box-shadow: 0 5px 16px 0 transparentize($my-primary-color, .5);
         }
 
         &:active {
             background-color: darken($my-primary-color, $btn-darken) !important;
+            box-shadow: 0 5px 8px 0 transparentize($my-primary-color, .5);
         }
     }
 
-    .Credit {
+    .credit {
         margin-top: 15px;
         padding: 0 10px;
 
         a {
             color: #838383;
 
-            i {
-                font-size: 12px;
-            }
-
-            span {
-                font-size: 12px;
+            i, span {
+                font-size: .8em;
                 font-weight: normal;
             }
         }
 
         span {
-            font-size: 13px;
-            font-family: "Sans Bold";
+            font-size: .8em;
+            font-weight: bold;
         }
     }
 
@@ -60,41 +57,66 @@
         li {
             margin-bottom: 2px;
 
+            a {
+                text-align: right;
+                text-decoration: none;
+                display: block;
+                padding: 8px 12px 8px 0;
+                border-radius: 0 11px 11px 0;
+                transition: .3s ease-out background-color;
+                font-size: .9em;
+                margin-left: -10px;
+                color: black;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+
+            a:hover {
+                background-color: $my-light-color;
+            }
+
+            a.active {
+                background-color: $my-primary-color;
+                color: white;
+
+                span, i {
+                    color: white;
+                }
+            }
+
             .dropdown-btn {
+                cursor: pointer;
                 &:after {
                     content: '';
                     font-family: "Material Design Icons";
                     float: left;
-                    color: black;
                     margin-left: 12px;
-                    transition: $main-transition;
+                    transition: $main-transition transform;
+                }
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 4px;
+                    height: 25px;
+                    position: absolute;
+                    right: -5px;
+                    border-radius: 4px 0 0 4px;
+                    background-color: $my-primary-color;
+                    transition: $main-transition right;
                 }
 
                 &.dropdown-active {
                     background-color: $my-light-color;
 
                     &:after {
-                        content: '';
-                        font-family: "MDI";
-                        float: left;
-                        color: black;
                         transform: rotate(180deg);
                     }
 
                     &:before {
-                        content: '';
-                        display: inline-block;
-                        width: 4px;
-                        height: 25px;
-                        position: absolute;
-                        right: -5px;
-                        border-radius: 4px 0 0 4px;
-                        background-color: $my-primary-color;
-                        animation: toLeft $main-transition forwards;
-                    }
-                    @keyframes toLeft {
-                        0%   {transform: translateX(0px);}
-                        100% {transform: translateX(-5px);}
+                        right: 0;
                     }
                 }
             }
@@ -106,42 +128,13 @@
                 a {
                     margin-bottom: 2px;
                     margin-top: 2px;
-                }
-            }
 
-            a {
-                text-align: right;
-                text-decoration: none;
-                display: block;
-                padding: 8px 12px 8px 0;
-                border-radius: 0 11px 11px 0;
-                transition: .3s ease-out;
-                font-size: 16px;
-                margin-left: -10px;
-
-                span, i {
-                    color: black;
-                }
-
-                span {
-                    margin-right: 10px;
-                }
-            }
-
-            a:hover {
-                background-color: $my-light-color;
-
-                span, i {
-                    transition: .3s ease-out;
-                }
-            }
-
-            a.active {
-                background-color: $my-primary-color;
-                color: white;
-
-                span, i {
-                    color: white;
+                    &.active {
+                        background-color: unset;
+                        span, i {
+                            color: $my-primary-color;
+                        }
+                    }
                 }
             }
         }

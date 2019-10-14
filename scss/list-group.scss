@@ -1,0 +1,32 @@
+.list-group {
+    border-radius: $main-radius;
+    box-shadow: $main-shadow;
+    border: none;
+
+    .list-group-item {
+        transition: $main-transition background-color;
+        border: none;
+
+        &.disabled {
+            color: map_get($colors, 'light')
+        }
+
+        &:first-child {
+            border-top-left-radius: $main-radius;
+            border-top-right-radius: $main-radius;
+        }
+
+        *:last-child {
+            border-bottom-left-radius: $main-radius;
+            border-bottom-right-radius: $main-radius;
+        }
+
+        & + .list-group-item {
+            border-top: 1px solid $my-light-color
+        }
+
+        &.active {
+            background-color: $my-primary-color;
+        }
+    }
+}

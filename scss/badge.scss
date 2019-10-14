@@ -1,38 +1,31 @@
 .badge {
-    padding: 5px;
+    padding: 6px;
     margin: 0 2px;
     border-radius: $main-radius;
-    font-family: "Sans Bold";
+    font-family: $main-font;
+    font-weight: bold;
+
+    &.badge-pill {
+        border-radius: 100px;
+        padding: 6px 10px;
+    }
 }
 
 .btn .badge {
     margin-right: 9px;
 }
 
-.badge-primary {
-    background-color: $primary-color;
-}
+@each $key, $color in $colors {
+    .badge {
+        &.badge-#{$key} {
+            background-color: $color;
 
-.badge-warning {
-    background-color: $warning-color;
-}
+            &.badge-pill {
+            }
+        }
+    }
 
-.badge-danger {
-    background-color: $danger-color;
-}
-
-.badge-info {
-    background-color: $info-color;
-}
-
-.badge-dark {
-    background-color: $dark-color;
-}
-
-.badge-light {
-    background-color: $light-color;
-}
-
-.badge-success {
-    background-color: $success-color;
+    a.badge-#{$key}:hover {
+        background-color: transparentize($color, .15);
+    }
 }

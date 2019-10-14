@@ -1,0 +1,39 @@
+extends ../pug/layout
+
+block content
+    h4 برد کرامب
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="breadcrumbNormal")
+            .example-container
+                .view
+                    nav(aria-label='breadcrumb').breadcrumb-container
+                        ol.breadcrumb
+                            li.breadcrumb-item.active(aria-current='page') خانه
+                    nav(aria-label='breadcrumb').breadcrumb-container
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') خانه
+                            li.breadcrumb-item.active(aria-current='page') کتابخانه
+                    nav(aria-label='breadcrumb').breadcrumb-container
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') خانه
+                            li.breadcrumb-item
+                                a(href='#') کتابخانه
+                            li.breadcrumb-item.active(aria-current='page') اطلاعات
+
+                .code
+                    pre
+                        code
+                            | &lt;nav class=&quot;breadcrumb-container&quot; aria-label=&quot;breadcrumb&quot;&gt;
+                            |   &lt;ol class=&quot;breadcrumb&quot;&gt;
+                            |       &lt;li class=&quot;breadcrumb-item active&quot; aria-current=&quot;page&quot;&gt;Home&lt;/li&gt;
+                            |   &lt;/ol&gt;
+                            | &lt;/nav&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#breadcrumbNormal") برد کرامب

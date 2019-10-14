@@ -1,85 +1,84 @@
 $(document).ready(function () {
 
-    var smallScreenSize = 1100;
+    const WINDOW = $(window);
+    const SMALL_SCREEN_SIZE = 1100;
+    const SIDEBAR = $('#sidebar');
+    const SIDEBAR_TOGGLE = $('.sidebar-toggle');
+    const SIDEBAR_ITEM = $('.sidebar-item');
+    const SIDEBAR_CTRL = $('.sidebar-ctrl');
+    const APP_BODY = $('.app-body');
+    const BACK_DROP = $('.back-drop');
 
     function isSmallScreen() {
-        return $(window).width() < smallScreenSize;
+        return WINDOW.width() < SMALL_SCREEN_SIZE;
     }
 
-    function isMobile() {
-        try {
-            document.createEvent("TouchEvent");
-            return true;
-        } catch (e) {
-            return false;
-        }
-    }
-
-    $('.sidebar-toggle').click(function () {
-        $('#sidebar').toggleClass('sidebar-show');
+    SIDEBAR_TOGGLE.click(function () {
+        SIDEBAR.toggleClass('sidebar-show');
         if (isSmallScreen()) {
-            $('.back-drop').fadeToggle();
+            BACK_DROP.fadeToggle();
         } else {
-            $('.app-body').toggleClass('show-menu');
-            $('.sidebar-ctrl').toggleClass('sidebar-ctrl-show-menu');
+            APP_BODY.toggleClass('show-menu');
+            SIDEBAR_CTRL.toggleClass('sidebar-ctrl-show-menu');
         }
     });
 
-    $('.back-drop').click(function () {
-        $('.back-drop').fadeToggle();
-        $('#sidebar').toggleClass('sidebar-show');
+    BACK_DROP.click(function () {
+        BACK_DROP.fadeToggle();
+        SIDEBAR.toggleClass('sidebar-show');
     });
 
-    $('.sidebar-item').click(function () {
+    SIDEBAR_ITEM.click(function () {
         if (isSmallScreen()) {
-            $('#sidebar').removeClass('sidebar-show');
-            $('.app-body').removeClass('show-menu');
+            SIDEBAR.removeClass('sidebar-show');
+            APP_BODY.removeClass('show-menu');
         }
-        var backDropState = $('.back-drop').css("display");
-        if (backDropState == 'block') {
-            $('.back-drop').fadeToggle();
+        let backDropState = BACK_DROP.css("display");
+        if (backDropState === 'block') {
+            BACK_DROP.fadeToggle();
         }
     });
 
-    onResize = function () {
+    let onResize = function () {
         if (isSmallScreen()) {
-            $('#sidebar').removeClass('sidebar-show');
-            $('.app-body').removeClass('show-menu');
-            $('.sidebar-ctrl').removeClass('sidebar-ctrl-show-menu');
+            SIDEBAR.removeClass('sidebar-show');
+            APP_BODY.removeClass('show-menu');
+            SIDEBAR_CTRL.removeClass('sidebar-ctrl-show-menu');
         } else {
-            $('#sidebar').addClass('sidebar-show');
-            $('.app-body').addClass('show-menu');
-            $('.sidebar-ctrl').addClass('sidebar-ctrl-show-menu');
+            SIDEBAR.addClass('sidebar-show');
+            APP_BODY.addClass('show-menu');
+            SIDEBAR_CTRL.addClass('sidebar-ctrl-show-menu');
         }
-        var backDropState = $('.back-drop').css("display");
-        if (backDropState == 'block') {
-            $('.back-drop').fadeToggle();
+        let backDropState = BACK_DROP.css("display");
+        if (backDropState === 'block') {
+            BACK_DROP.fadeToggle();
         }
     };
-	
-    swipeSupport();
+
     onResize();
     $(window).resize(onResize);
 
-    function swipeSupport() {
-        if (isMobile()) {
-            $('body').swipe({
-                swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                    var isSwipeNeed = fingerData[0].start.x > ($(window).width() - ($(window).width() * 15 / 100));
-                    if (isSwipeNeed && direction == 'left') {
-                        $('#sidebar').addClass('sidebar-show');
-                        $('.back-drop').fadeIn();
-                    }
-
-                    if (direction == 'right' && $('#sidebar').hasClass('sidebar-show')) {
-                        $('.back-drop').fadeOut();
-                        $('#sidebar').removeClass('sidebar-show');
-                    }
+    let swipeSupport = function () {
+        $('body').swipe({
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                var isSwipeNeed = fingerData[0].start.x > ($(window).width() - ($(window).width() * 15 / 100));
+                if (isSwipeNeed && direction === 'left') {
+                    SIDEBAR.addClass('sidebar-show');
+                    BACK_DROP.fadeIn();
                 }
-            }, {passive: false});
-        } else {
-            $('body').off();
-        }
+
+                if (direction === 'right' && $('#sidebar').hasClass('sidebar-show')) {
+                    SIDEBAR.removeClass('sidebar-show');
+                    BACK_DROP.fadeOut();
+                }
+            }
+        }, {passive: false});
         // console.log($._data( $(document.body)[0], "events" ));
+    };
+
+    try {
+        document.createEvent("TouchEvent");
+        swipeSupport();
+    } catch (e) {
     }
 });

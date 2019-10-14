@@ -1,0 +1,34 @@
+.text-center
+    img(src="../assets/img/ding-ding-logo.png", alt="DingDing-Panel Logo").mb-2
+    .display-4 DingDing-Panel
+    p.mt-2 Persian Admin Template
+
+.text-left(style="direction: ltr")
+    h5 Installation
+    .example-container
+        .code
+            pre
+                 code
+                    | git clone https://github.com/moein459/DingDing-Panel.git
+
+    h5 Resolve Dependencies
+    small ( you need #[a(href="https://nodejs.org/", target="_blank") node] )
+    .example-container
+        .code
+            pre
+                code
+                    | npm install
+
+    h5 Build & Development
+    .example-container
+        .code
+            pre
+                code
+                    | npm run build
+
+    h4 Note
+    ul
+        li
+            | The fonts folder isn't available. Because of terms of using "IranSans" font from #[a(href="https://fontiran.com/", target="_blank") Fontiran] which i use in this project. I'm pre sure you already bought that, if not you can use other fonts you want ( need some changes on code :D ) or buy it from their website which i mention that before.
+        li
+            | If you use one of the js libraries or frameworks like React, Angular, Vue etc, I highly recommend you to don't build solution. instead, import styles and js or even dependencies manually. for example you may wanna only use 50% features of bootstrap or for js files you may want to apply functionality with your framework features.

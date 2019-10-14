@@ -2,7 +2,7 @@
     border: none;
     border-radius: $main-radius;
     overflow: hidden;
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, .05);
+    box-shadow: $main-shadow;
 
     .card-header {
         background: hsl(0, 0, 97%);
@@ -11,5 +11,48 @@
 
     .card-footer {
         background: unset;
+    }
+
+    .nav.nav-tabs {
+        border-bottom: none;
+        padding-bottom: 0;
+        overflow: visible;
+
+        li {
+            float: right;
+            position: relative;
+
+            a {
+                padding: 0 15px;
+                display: block;
+                text-decoration: none;
+                color: hsl(0, 0, 35);
+                transition: $main-transition;
+                box-shadow: unset !important;
+                background-color: unset;
+
+
+                &:hover:not(.disabled):not(.active) {
+                    color: black;
+                }
+
+                &.active {
+                    background-color: unset;
+                    color: $my-primary-color;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 150%;
+                        right: -25%;
+                        height: 3px;
+                        border-radius: 3px 3px 0 0;
+                        position: relative;
+                        bottom: -12px;
+                        background-color: $my-primary-color;
+                    }
+                }
+            }
+        }
     }
 }

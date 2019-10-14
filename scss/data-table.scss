@@ -1,11 +1,11 @@
 .data-table {
     .card-header {
-        padding: .75rem .9rem;
+        padding: .75em .9em;
 
         .options {
             .btn-icon {
                 i {
-                    font-size: 1.2rem;
+                    font-size: 1.2em;
                     vertical-align: -2px;
                 }
             }
@@ -41,8 +41,9 @@
             input {
                 background-color: unset;
                 border: unset;
-                font-size: .8rem;
+                font-size: .8em;
                 padding-right: 25px;
+                box-shadow: none;
             }
 
             .form-group {
@@ -56,5 +57,14 @@
                 }
             }
         }
+    }
+}
+.data-table-btns {
+    margin-right: 10px;
+    .btn {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        position: relative;
+        bottom: -6px;
     }
 }

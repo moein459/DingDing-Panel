@@ -1,0 +1,4 @@
+nav(aria-label='breadcrumb').breadcrumb-container
+    ol.breadcrumb
+        each bc, index in breadcrumbs
+            +breadcrumb(bc, breadcrumbs.length -1 === index)

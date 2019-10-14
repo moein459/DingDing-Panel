@@ -1,0 +1,18 @@
+.toast {
+    border: none;
+    border-radius: $main-radius;
+    box-shadow: $main-shadow;
+    opacity: 1;
+
+    .toast-header {
+        justify-content: space-between;
+        border-bottom: none;
+        i {
+            margin-left: 5px;
+            vertical-align: text-bottom;
+        }
+        .close {
+            transition: $main-transition;
+        }
+    }
+}

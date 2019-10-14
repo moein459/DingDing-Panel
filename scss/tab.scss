@@ -1,42 +1,70 @@
 .nav {
-    display: block;
+    padding-right: 0;
 
-    &.nav-tabs {
-        border-bottom: none;
-        padding-right: 0;
+    &.nav-pills {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: scroll;
+        padding-bottom: 10px;
 
-        li {
-            float: right;
-            position: relative;
+        .nav-item {
+            margin: 0 2px;
 
             a {
-                padding: 0 15px;
-                display: block;
-                text-decoration: none;
-                color: hsl(0, 0, 35);
+                border-radius: $main-radius;
                 transition: $main-transition;
+                color: $my-primary-color;
 
                 &:hover {
-                    color: black;
+                    color: darken($my-primary-color, 10%);
                 }
 
                 &.active {
-
                     color: $my-primary-color;
+                    background-color: white;
+                    box-shadow: $main-shadow;
+                }
 
-                    &:after {
-                        content: "";
-                        display: block;
-                        width: 150%;
-                        right: -25%;
-                        height: 3px;
-                        border-radius: 3px 3px 0 0;
-                        position: relative;
-                        bottom: -12px;
-                        background-color: $my-primary-color;
-                    }
+                &.disabled {
+                    color: lighten(map_get($colors, 'dark'), 50%);
                 }
             }
         }
     }
+
+    &.nav-tabs {
+        border: none;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        padding-bottom: 10px;
+
+        li {
+            margin: 0 2px;
+
+            a {
+                transition: $main-transition background-color, $main-transition color;
+                border: none;
+                background-color: white;
+                color: $my-primary-color;
+                border-radius: $main-radius;
+                box-shadow: $main-shadow;
+
+                &.disabled {
+                    color: lighten(map_get($colors, 'dark'), 60%);
+                    background-color: white;
+                    cursor: default;
+                }
+
+                &:hover:not(.disabled):not(.active) {
+                    color: darken($my-primary-color, 10%);
+                }
+
+                &.active {
+                    background-color: $my-primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+
 }

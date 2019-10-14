@@ -6,7 +6,7 @@
     height: 55px;
     padding: 0 20px;
     position: fixed;
-    border-bottom: 1px solid rgba(222,226,230,0);
+    border-bottom: 1px solid transparent;
     transition: border-bottom-color $main-transition;
 
     &.scrolled-down {
@@ -31,8 +31,8 @@
             position: relative;
             top: -5px;
             right: -15px;
-            font-size: 1.1rem;
-            -webkit-font-smoothing: antialiased
+            font-size: 1.1em;
+            -webkit-font-smoothing: antialiased;
         }
 
         i {
@@ -93,7 +93,7 @@
                         margin: -1px 0 0 0;
                         display: inline-block;
                         color: white;
-                        font-size: 1.05rem;
+                        font-size: 1.05em;
                         //position: absolute;
                         //margin: 6px 10px 0 0;
                     }
@@ -103,7 +103,7 @@
                         //color: #136e60;
                         color: darken($my-primary-color, 20%);
                         //color: lighten( $my-primary-color, 30% );
-                        font-size: .6rem;
+                        font-size: .6em;
                         position: relative;
                         top: 4px;
                     }
@@ -120,7 +120,7 @@
 
                 i {
                     color: white;
-                    font-size: 1.6rem;
+                    font-size: 1.6em;
                     padding: 0 6px;
                 }
             }

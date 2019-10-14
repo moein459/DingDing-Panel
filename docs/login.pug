@@ -2,11 +2,11 @@ doctype html
 html(lang="fa-IR")
     head
         title Login
-        include head.pug
+        include ../pug/head
     body.login-container
         .card.login-card
             .card-header
-                ul.nav.nav-tabs
+                ul.d-flex.justify-content-around.nav.nav-tabs
                     li.active
                         a(data-toggle="tab" href="#getCode").active دریافت کد
                     li
@@ -29,6 +29,13 @@ html(lang="fa-IR")
                             li
                                 | ...
                     #menu1.tab-pane.fade
-                        p مرحله دوم
+                        .form-group
+                            label(for="username") نام کاربری
+                            input#username.form-control(type="text")
+                            label(for="password") پسورد
+                            input#password.form-control(type="password")
+                            .d-flex.justify-content-between.align-items-baseline.mt-2
+                                small رمز عبور خود را فراموش کرده اید؟
+                                .btn.btn-primary ورود
             .card-footer
                 span سیستم اتوماسیون تغذیه

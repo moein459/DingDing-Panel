@@ -1,28 +1,23 @@
 .alert {
     border-radius: $main-radius;
     border-right-width: 4px;
+    i {
+        margin-left: 10px;
+    }
 }
 
-.alert-primary {
-    border-color: $primary-color;
+@each $key, $color in $colors {
+    .alert-#{$key} {
+        border-color: $color;
+    }
 }
 
-.alert-success {
-    border-color: $success-color;
-}
-
-.alert-danger {
-    border-color: $danger-color;
-}
-
-.alert-warning {
-    border-color: $warning-color;
-}
-
-.alert-info {
-    border-color: $info-color;
-}
-
-.alert-dark {
-    border-color: $dark-color;
+.alert-dismissible {
+    padding-right: inherit;
+    padding-left: 4em;
+    .close {
+        transition: $main-transition color, opacity;
+        right: unset;
+        left: 0;
+    }
 }

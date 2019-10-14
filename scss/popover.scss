@@ -1,0 +1,25 @@
+.popover {
+    font-family: iransans;
+    border: none;
+    border-radius: $main-radius;
+    box-shadow: $main-shadow;
+
+    .popover-header {
+        background-color: rgba(255,255,255,.85);
+        border-bottom: 1px solid $my-light-color;
+
+        &:before {
+            content: none;
+        }
+    }
+
+    .arrow {
+        &:before {
+            content: none;
+        }
+
+        &:after {
+            border-color: rgba(255,255,255,.85) transparent;
+        }
+    }
+}

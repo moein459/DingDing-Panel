@@ -1,0 +1,10 @@
+.btn-my-primary {
+    @include btn-outline-adv('my-primary',$my-primary-color);
+    color: white !important;
+}
+
+@each $key, $color in $colors {
+    .btn-outline-#{$key} {
+        @include btn-outline-adv($key, $color);
+    }
+}

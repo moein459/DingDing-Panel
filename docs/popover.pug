@@ -1,0 +1,21 @@
+extends ../pug/layout
+
+block content
+    h4 پاپ اور
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="popoverNormal")
+                .example-container
+                    .view
+                        button.btn.btn-default.btn-shadow(type='button', data-toggle='popover', data-placement='bottom', title='عنوان', data-trigger="focus", data-content="توضیحات تکمیلی و ادامه دار") توضیحات تکمیلی
+
+                    .code
+                        pre
+                            code
+                                | &lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-danger&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; title=&quot;Popover title&quot; data-content=&quot;...&quot;&gt;...&lt;/button&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#popoverNormal") پاپ آور

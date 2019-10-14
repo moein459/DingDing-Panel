@@ -1,0 +1,30 @@
+.btn-icon {
+    display: inline;
+    margin: 0 2px;
+    padding: 4px;
+    cursor: pointer;
+    opacity: .75;
+    transition: $main-transition;
+
+    &:hover {
+        color: $my-primary-color;
+        opacity: 1;
+    }
+}
+
+.btn {
+    &.btn-edit, &.btn-delete {
+        i {
+            vertical-align: -0.05em;
+            margin-right: 0.2em;
+            position: relative;
+            left: -3px;
+            top: 1px;
+        }
+    }
+
+    .spinner-border, .spinner-grow {
+        vertical-align: middle;
+        margin-right: 9px;
+    }
+}

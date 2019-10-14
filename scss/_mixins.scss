@@ -1,0 +1,42 @@
+// Buttons
+@mixin btn-adv($color) {
+    background-color: $color;
+    position: relative;
+    &:hover {
+        background-color: lighten($color, $btn-lighten);
+    }
+
+    &:active {
+        background-color: darken($color, $btn-darken) !important;
+    }
+
+    &.btn-shadow {
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        &:hover {
+            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+        }
+    }
+
+    &.btn-colored-shadow {
+        box-shadow: 0 4px 6px transparentize($color, .7);
+        &:hover {
+            box-shadow: 0 7px 14px transparentize($color, .75);
+        }
+    }
+}
+
+@mixin btn-outline-adv($key, $color) {
+    border: 1px solid $color;
+    @if $key == 'warning' or $key == 'light' or $key == 'secondary'{
+        color: black;
+    }
+    &:hover {
+        background-color: lighten($color, $btn-lighten);
+        border-color: lighten($color, $btn-lighten);
+    }
+
+    &:active {
+        background-color: darken($color, $btn-darken) !important;
+        border-color: darken($color, $btn-darken) !important;
+    }
+}

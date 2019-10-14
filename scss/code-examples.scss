@@ -1,0 +1,78 @@
+.example-container {
+    border-radius: $main-radius;
+    border: 1px solid map-get($colors, 'light');
+    box-shadow: $main-shadow;
+    margin-bottom: 1.4em;
+
+    .view {
+        padding: 15px;
+    }
+
+    .code {
+        //background-color: white;
+        direction: ltr;
+        text-align: left;
+        border-radius: $main-radius;
+    }
+}
+
+.code-examples-side-nav {
+    list-style-type: none;
+    top: 75px;
+    position: sticky;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 4px;
+        height: 100%;
+        background-color: $my-primary-color;
+        border-radius: 100px;
+        right: 22px;
+    }
+
+    li {
+        margin: 5px 0;
+
+        a {
+            color: map-get($colors, 'secondary');
+            text-decoration: none;
+
+            &:active {
+                color: $my-primary-color;
+            }
+
+            &:before {
+                //content: "";
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                margin: 0 7px;
+                top: -2px;
+                background-color: #8b8b8b;
+                border-radius: 100%;
+                position: relative;
+            }
+        }
+    }
+}
+
+pre[class*="language-"] {
+    margin: 0;
+    border-radius: $main-radius;
+
+    & > code {
+        border-radius: $main-radius;
+        border: none;
+        box-shadow: none;
+    }
+
+    &:before, &:after {
+        content: none;
+    }
+}

@@ -1,0 +1,84 @@
+extends ../pug/layout
+
+block content
+    h4 نشان
+
+    .row
+        .col-xl-9.col-lg-8.col-md-12
+            div(id="badgeNormal")
+            .example-container
+                .view
+                    span.badge.badge-primary نشان
+                    span.badge.badge-secondary نشان
+                    span.badge.badge-success نشان
+                    span.badge.badge-danger نشان
+                    span.badge.badge-warning نشان
+                    span.badge.badge-info نشان
+                    span.badge.badge-light نشان
+                    span.badge.badge-dark نشان
+                .code
+                    pre
+                        code
+                            | &lt;span class=&quot;badge badge-primary&quot;&gt;&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-secondary&quot;&gt;&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-success&quot;&gt;&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-danger&quot;&gt;&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-warning&quot;&gt;&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-info&quot;&gt;&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-light&quot;&gt;&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-dark&quot;&gt;&lt;/span&gt;
+
+            div(id="badgePill")
+            .example-container
+                .view
+                    span.badge.badge-pill.badge-primary نشان
+                    span.badge.badge-pill.badge-secondary نشان
+                    span.badge.badge-pill.badge-success نشان
+                    span.badge.badge-pill.badge-danger نشان
+                    span.badge.badge-pill.badge-warning نشان
+                    span.badge.badge-pill.badge-info نشان
+                    span.badge.badge-pill.badge-light نشان
+                    span.badge.badge-pill.badge-dark نشان
+                .code
+                    pre
+                        code
+                            | &lt;span class=&quot;badge badge-pill badge-primary&quot;&gt;Primary&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-pill badge-secondary&quot;&gt;Secondary&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-pill badge-success&quot;&gt;Success&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-pill badge-danger&quot;&gt;Danger&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-pill badge-warning&quot;&gt;Warning&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-pill badge-info&quot;&gt;Info&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-pill badge-light&quot;&gt;Light&lt;/span&gt;
+                            | &lt;span class=&quot;badge badge-pill badge-dark&quot;&gt;Dark&lt;/span&gt;
+
+            div(id="badgeLink")
+            .example-container
+                .view
+                    a.badge.badge-primary(href='#') نشان
+                    a.badge.badge-secondary(href='#') نشان
+                    a.badge.badge-success(href='#') نشان
+                    a.badge.badge-danger(href='#') نشان
+                    a.badge.badge-warning(href='#') نشان
+                    a.badge.badge-info(href='#') نشان
+                    a.badge.badge-light(href='#') نشان
+                    a.badge.badge-dark(href='#') نشان
+                .code
+                    pre
+                        code
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-primary&quot;&gt;&lt;/a&gt;
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-secondary&quot;&gt;&lt;/a&gt;
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-success&quot;&gt;&lt;/a&gt;
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-danger&quot;&gt;&lt;/a&gt;
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-warning&quot;&gt;&lt;/a&gt;
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-info&quot;&gt;&lt;/a&gt;
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-light&quot;&gt;&lt;/a&gt;
+                            | &lt;a href=&quot;#&quot; class=&quot;badge badge-dark&quot;&gt;&lt;/a&gt;
+
+        .col-xl-3.col-lg-4.col-md-12
+            ul.code-examples-side-nav
+                li
+                    a(href="#badgeNormal") نشان معمولی
+                li
+                    a(href="#badgePill") نشان قرص
+                li
+                    a(href="#badgeLink") نشان لینک

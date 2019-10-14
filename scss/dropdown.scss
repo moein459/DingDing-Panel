@@ -5,7 +5,7 @@
     margin-top: 4px;
     border-radius: $main-radius;
     border: none;
-    box-shadow: 0 3px 5px 1px rgba(0,0,0,.05);
+    box-shadow: $main-shadow;
 }
 
 .dropdown-item {
@@ -22,8 +22,8 @@
     display: inline-block;
     margin-right: .2em;
     margin-left: -4px;
-    vertical-align: - .1rem;
+    vertical-align: - .1em;
     content: "";
-    font-family: "MDI";
+    font-family: "Material Design Icons";
     border: none;
 }

@@ -1,0 +1,37 @@
+$my-primary-color: #2ABB9B;
+//$my-primary-color: #ffaa00;
+
+$my-light-color: #ECF0F1;
+
+// Colors
+$colors: (
+        primary:    #1E8BC3,
+        success:    #2ABB9B,
+        light:      #dadfe1,
+        dark:       #2e3131,
+        warning:    #E9D460,
+        danger:     #c0392b,
+        info:       #00b5cc,
+        secondary:  #8b8b8b,
+        default:    #ffffff
+);
+
+// Sidebar
+$sidebar-width: 250px;
+$sidebar-transition: .5s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+// Transition
+$main-transition: .3s ease-out;
+
+// Buttons
+$btn-lighten: 4%;
+$btn-darken: 3%;
+
+// Radius
+$main-radius: 5px;
+
+// Font
+$main-font: "iransans", Tahoma, sans-serif;
+
+// Shadow
+$main-shadow: 0 3px 5px 1px rgba(0, 0, 0, .05);
