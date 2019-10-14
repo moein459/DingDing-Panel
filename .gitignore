@@ -1,10 +1,6 @@
 # Don't track content of these folders
 node_modules/
 .idea/
-#build/
-#build/assets/fonts/
-assets/fonts
-
 
 # Compiled source #
 ###################
