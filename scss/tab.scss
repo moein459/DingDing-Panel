@@ -4,11 +4,12 @@
     &.nav-pills {
         flex-wrap: nowrap;
         white-space: nowrap;
-        overflow: scroll;
+        overflow: auto;
         padding-bottom: 10px;
 
         .nav-item {
             margin: 0 2px;
+            white-space: nowrap;
 
             a {
                 border-radius: $main-radius;
@@ -35,11 +36,12 @@
     &.nav-tabs {
         border: none;
         flex-wrap: nowrap;
-        overflow: scroll;
+        overflow: auto;
         padding-bottom: 10px;
 
-        li {
+        .nav-item {
             margin: 0 2px;
+            white-space: nowrap;
 
             a {
                 transition: $main-transition background-color, $main-transition color;
@@ -66,5 +68,4 @@
             }
         }
     }
-
 }
