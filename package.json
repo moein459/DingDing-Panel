@@ -12,7 +12,7 @@
         "@mdi/font": "^4.5.95",
         "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
-        "jquery-touchswipe": "^1.6.19￿",
+        "jquery-touchswipe": "^1.6.19",
         "popper.js": "^1.15.0",
         "prismjs": "^1.17.1"
     },

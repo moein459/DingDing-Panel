@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 You just need to run this command in main repository folder:
 ```
-npm install
+npm install --unsafe-perm
 ```
 
 ### Build & Development

@@ -14,8 +14,8 @@ assets/fonts
 *.exe
 *.o
 *.so
-*.css
-*.html
+#*.css
+#*.html
 *.map
 
 # Packages #
