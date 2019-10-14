@@ -2,7 +2,7 @@
 node_modules/
 .idea/
 #build/
-build/assets/fonts/
+#build/assets/fonts/
 assets/fonts
 
 
