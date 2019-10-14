@@ -8,7 +8,7 @@ const minify = require('gulp-minify');
 function html() {
     return src('docs/*.pug')
         .pipe(pug())
-        .pipe(dest('build/html'))
+        .pipe(dest('build'))
 }
 
 function css() {
