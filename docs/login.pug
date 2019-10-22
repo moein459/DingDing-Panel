@@ -32,10 +32,11 @@ html(lang="fa-IR")
                         .form-group
                             label(for="username") نام کاربری
                             input#username.form-control(type="text")
+                        .form-group
                             label(for="password") پسورد
                             input#password.form-control(type="password")
-                            .d-flex.justify-content-between.align-items-baseline.mt-2
-                                small رمز عبور خود را فراموش کرده اید؟
-                                .btn.btn-primary(onclick='window.location.href="index.html";') ورود
+                        .d-flex.justify-content-between.align-items-baseline
+                            small رمز عبور خود را فراموش کرده اید؟
+                            .btn.btn-primary(onclick='window.location.href="index.html";') ورود
             .card-footer
                 span پنل مدیریت
