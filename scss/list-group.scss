@@ -8,7 +8,7 @@
         border: none;
 
         &.disabled {
-            color: map_get($colors, 'light')
+            color: lighten(map_get($colors, 'dark'), 60%);
         }
 
         &:first-child {

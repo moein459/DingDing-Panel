@@ -26,7 +26,7 @@
                 padding: 0 15px;
                 display: block;
                 text-decoration: none;
-                color: hsl(0, 0, 35);
+                color: hsl(0, 0, 40);
                 transition: $main-transition;
                 box-shadow: unset !important;
                 background-color: unset;
@@ -34,6 +34,11 @@
 
                 &:hover:not(.disabled):not(.active) {
                     color: black;
+                }
+
+                &.disabled {
+                    color: lighten(map_get($colors, 'dark'), 60%);
+                    cursor: default;
                 }
 
                 &.active {
